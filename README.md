@@ -27,6 +27,7 @@ GitHub Action (daily)  ──►  python -m scraper.run  ──►  data/jobs.js
 | `scraper/sources/ucrecruit.py` | UC academic recruitments (UCSF, UCLA, UCSD, UC Davis, UC Irvine) — salary ranges required by CA law |
 | `scraper/sources/stanford.py` | Stanford Faculty Positions (facultypositions.stanford.edu) |
 | `scraper/extract.py` | Rule-based extraction: relevance, job type, MD requirement, salary, effort split, benefits, subspecialties |
+| `scraper/geocode.py` | Nominatim lookups (1 req/s, cached in `data/geocode_cache.json`) for cities outside the built-in table; writes `data/cities.json` for the "Near city" search |
 | `scraper/llm_enrich.py` | Optional Claude pass for the free-text fields (only runs if `ANTHROPIC_API_KEY` is set; cached per posting) |
 | `scraper/run.py` | Orchestrates sources → normalize → de-dupe cross-listings → `data/jobs.json` + `data/meta.json` |
 | `index.html`, `assets/` | Static UI: filters, job cards, Leaflet map, Chart.js insights, CSV export |

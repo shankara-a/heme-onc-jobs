@@ -1,0 +1,1902 @@
+{
+"- boston -|MA": [
+42.3588,
+-71.0578
+],
+"- gaithersburg -|MD": [
+39.1399,
+-77.1929
+],
+"a facility in|MD": null,
+"a facility in|WV": null,
+"aberdeen|SD": [
+45.465,
+-98.4878
+],
+"abilene|TX": [
+32.4464,
+-99.7476
+],
+"academic physician -|MD": null,
+"akron|OH": [
+41.0831,
+-81.5185
+],
+"alexandria|LA": [
+31.3119,
+-92.4454
+],
+"allentown|PA": [
+40.6023,
+-75.4716
+],
+"alpena|MI": [
+45.0176,
+-83.667
+],
+"amarillo|TX": [
+35.2073,
+-101.8371
+],
+"an|OR": [
+45.5583,
+-122.9218
+],
+"appleton|WI": [
+44.2614,
+-88.407
+],
+"asheboro north carolina|NC": [
+35.7079,
+-79.8136
+],
+"asheville|NC": [
+35.5954,
+-82.5508
+],
+"augusta|GA": [
+33.471,
+-81.9748
+],
+"avon|IN": [
+39.7628,
+-86.3997
+],
+"a|CA": [
+33.6664,
+-117.9389
+],
+"a|CO": [
+39.0304,
+-108.5213
+],
+"a|HI": [
+21.32,
+-157.9152
+],
+"bangor|ME": [
+44.8016,
+-68.7713
+],
+"barrington|IL": [
+42.1539,
+-88.1362
+],
+"bay shore|NY": [
+40.7277,
+-73.2435
+],
+"beaumont|TX": [
+30.0829,
+-94.0984
+],
+"beavercreek|OH": [
+39.7092,
+-84.0633
+],
+"bedford|IN": [
+38.8612,
+-86.4872
+],
+"belfast|ME": [
+44.4262,
+-69.0065
+],
+"bellevue|WA": [
+47.6144,
+-122.1923
+],
+"bellflower|CA": [
+33.8826,
+-118.1168
+],
+"bellingham|WA": [
+48.7544,
+-122.4788
+],
+"belpre|OH": [
+39.2773,
+-81.5758
+],
+"bemidji|MN": [
+47.4723,
+-94.8833
+],
+"bennington|VT": [
+42.8789,
+-73.1968
+],
+"bentonville|AR": [
+36.3729,
+-94.2088
+],
+"berlin|VT": [
+44.2101,
+-72.5759
+],
+"berwyn|IL": [
+41.8506,
+-87.7937
+],
+"beverly & gloucester|MA": null,
+"binghamton|NY": [
+42.0987,
+-75.9125
+],
+"bismarck|ND": [
+46.8083,
+-100.7837
+],
+"blacksburg|VA": [
+37.2297,
+-80.4137
+],
+"bloomington|IL": [
+40.4798,
+-88.9939
+],
+"bloomington|IN": [
+39.167,
+-86.5343
+],
+"bluffton|SC": [
+32.2371,
+-80.8604
+],
+"boca raton|FL": [
+26.3587,
+-80.0831
+],
+"bolivar|MO": [
+37.6137,
+-93.4108
+],
+"bonney lake|WA": [
+47.187,
+-122.1702
+],
+"boone|NC": [
+36.2188,
+-81.684
+],
+"boulder|CO": [
+40.015,
+-105.2705
+],
+"bowling green|KY": [
+36.9929,
+-86.4429
+],
+"brandon|FL": [
+27.9378,
+-82.2859
+],
+"bridgeport|CT": [
+41.1793,
+-73.1888
+],
+"bridgeport|WV": [
+39.2849,
+-80.2539
+],
+"brisbane|CA": [
+37.6872,
+-122.4028
+],
+"brooklyn|NY": [
+40.6526,
+-73.9497
+],
+"brownwood|TX": [
+31.7209,
+-98.9819
+],
+"brunswick|GA": [
+31.15,
+-81.4915
+],
+"brunswick|ME": [
+43.9167,
+-69.9659
+],
+"bryan|OH": [
+41.4748,
+-84.5525
+],
+"burien|WA": [
+47.4699,
+-122.3485
+],
+"burlington & peabody|MA": [
+42.5501,
+-70.9584
+],
+"burlington|WI": [
+42.6801,
+-88.2764
+],
+"burnsville|MN": [
+44.7671,
+-93.2774
+],
+"butte|MT": [
+46.0132,
+-112.5365
+],
+"cambridge|MA": [
+42.3656,
+-71.104
+],
+"cambridge|MN": [
+45.5727,
+-93.2244
+],
+"canton|OH": [
+40.7985,
+-81.375
+],
+"cape girardeau|MO": [
+37.3047,
+-89.5176
+],
+"carbondale|IL": [
+37.7275,
+-89.2167
+],
+"carmel|NY": [
+41.4266,
+-73.6788
+],
+"cedar city|UT": [
+37.6774,
+-113.0618
+],
+"cedar rapids|IA": [
+41.9759,
+-91.6704
+],
+"cerritos|CA": [
+33.8644,
+-118.0539
+],
+"chattanooga|TN": [
+35.0457,
+-85.3095
+],
+"chesapeake|VA": [
+36.7168,
+-76.2494
+],
+"chillicothe|OH": [
+39.3331,
+-82.9824
+],
+"clarksburg|WV": [
+39.2806,
+-80.3445
+],
+"clinical faculty -|UT": null,
+"coeur d alene|ID": [
+47.6743,
+-116.7812
+],
+"college station|TX": [
+30.6184,
+-96.3456
+],
+"colorado springs|CO": [
+38.834,
+-104.8253
+],
+"columbia|MO": [
+38.9519,
+-92.3337
+],
+"columbus|IN": [
+39.2014,
+-85.9214
+],
+"columbus|MS": [
+33.4957,
+-88.4273
+],
+"coos bay|OR": [
+43.3679,
+-124.2175
+],
+"corbin|KY": [
+36.9487,
+-84.0969
+],
+"corning|NY": [
+42.1435,
+-77.0543
+],
+"corona|CA": [
+33.8753,
+-117.5664
+],
+"corpus christi|TX": [
+27.7635,
+-97.4033
+],
+"cottonwood|AZ": [
+34.7476,
+-112.0272
+],
+"covington|LA": [
+30.4754,
+-90.101
+],
+"crescent city|CA": [
+41.7522,
+-124.1979
+],
+"crosby|MN": [
+46.4822,
+-93.9578
+],
+"crown point and michigan city|IN": null,
+"crystal lake|IL": [
+42.2411,
+-88.3162
+],
+"culpeper|VA": [
+38.4734,
+-77.9961
+],
+"dalton|GA": [
+34.7692,
+-84.9702
+],
+"danbury|CT": [
+41.3948,
+-73.454
+],
+"danville|PA": [
+40.9665,
+-76.6131
+],
+"davenport|IA": [
+41.5225,
+-90.5756
+],
+"dayton|OH": [
+39.7589,
+-84.1916
+],
+"dearborn|MI": [
+42.3223,
+-83.1763
+],
+"dedham|MA": [
+42.2489,
+-71.1756
+],
+"deerfield beach|FL": [
+26.3183,
+-80.0996
+],
+"deland|FL": [
+29.0281,
+-81.3034
+],
+"delaware|OH": [
+40.2318,
+-82.9651
+],
+"des moines|IA": [
+41.5869,
+-93.6249
+],
+"dickinson|ND": [
+46.8792,
+-102.7896
+],
+"downers grove|IL": [
+41.7937,
+-88.0102
+],
+"dublin|CA": [
+37.7022,
+-121.9358
+],
+"dublin|GA": [
+32.5404,
+-82.9038
+],
+"dubois|PA": [
+41.1187,
+-78.7622
+],
+"duluth|MN": [
+46.7838,
+-92.1053
+],
+"durango|CO": [
+37.2769,
+-107.8766
+],
+"eagle pass|TX": [
+28.7092,
+-100.4993
+],
+"east brunswick|NJ": [
+40.4279,
+-74.416
+],
+"east lansing|MI": [
+42.732,
+-84.4722
+],
+"easton|MD": [
+38.7745,
+-76.0763
+],
+"eau claire|WI": [
+44.8113,
+-91.4985
+],
+"edina|MN": [
+44.8897,
+-93.3501
+],
+"edmonds|WA": [
+47.8106,
+-122.3775
+],
+"elgin|IL": [
+42.0373,
+-88.2811
+],
+"elizabethtown|KY": [
+37.694,
+-85.8591
+],
+"elkins|WV": [
+38.9259,
+-79.8467
+],
+"elkin|NC": [
+36.2441,
+-80.8508
+],
+"elkton|MD": [
+39.6065,
+-75.8331
+],
+"enid|OK": [
+36.3968,
+-97.8791
+],
+"eugene|OR": [
+44.0505,
+-123.0951
+],
+"facility in|CA": null,
+"faculty position|VA": null,
+"fairfield county|CT": [
+41.3084,
+-73.3136
+],
+"faribault|MN": [
+43.6648,
+-93.9511
+],
+"fayetteville|NC": [
+35.0526,
+-78.8783
+],
+"festus|MO": [
+38.2207,
+-90.396
+],
+"findlay|OH": [
+41.0414,
+-83.6504
+],
+"fishersville|VA": [
+38.1033,
+-78.9853
+],
+"fitchburg|MA": [
+42.5839,
+-71.8038
+],
+"flagstaff|AZ": [
+35.1988,
+-111.6518
+],
+"florence|AL": [
+34.7998,
+-87.6773
+],
+"florence|SC": [
+34.1984,
+-79.7672
+],
+"fond du lac|WI": [
+43.7533,
+-88.4494
+],
+"fort collins|CO": [
+40.5872,
+-105.077
+],
+"fort lauderdale|FL": [
+26.1223,
+-80.1434
+],
+"fort myers and cape coral|FL": null,
+"fort myers|FL": [
+26.6406,
+-81.8723
+],
+"fort wayne|IN": [
+41.08,
+-85.1386
+],
+"fresno|VA": [
+36.8164,
+-76.2182
+],
+"gadsden|AL": [
+34.0128,
+-86.003
+],
+"gainesville|FL": [
+29.652,
+-82.325
+],
+"gaithersburg|MD": [
+39.1399,
+-77.1929
+],
+"galesburg|IL": [
+40.9476,
+-90.3712
+],
+"gallipolis|OH": [
+38.8098,
+-82.2024
+],
+"garden city|KS": [
+37.9717,
+-100.8727
+],
+"gastonia|NC": [
+35.2623,
+-81.1838
+],
+"gettysburg|PA": [
+39.8309,
+-77.231
+],
+"gibson city|IL": [
+40.4653,
+-88.3759
+],
+"gilbert|AZ": [
+33.3528,
+-111.789
+],
+"glen dale|WV": [
+39.9492,
+-80.7543
+],
+"glen mills|PA": [
+39.9197,
+-75.4904
+],
+"goshen|NY": [
+41.4021,
+-74.3242
+],
+"grand forks|ND": [
+47.9252,
+-97.0306
+],
+"grand junction|CO": [
+39.0673,
+-108.5645
+],
+"grand rapids and muskegon|MI": null,
+"grand rapids|MI": [
+42.9632,
+-85.6679
+],
+"great falls|MT": [
+47.5049,
+-111.2919
+],
+"greater cleveland area|OH": null,
+"greater richmond|VA": [
+37.5452,
+-77.4368
+],
+"greeley|CO": [
+40.4233,
+-104.7091
+],
+"green bay|WI": [
+44.5126,
+-88.0126
+],
+"greenville|MI": [
+43.1775,
+-85.2528
+],
+"greenville|NC": [
+35.6132,
+-77.3725
+],
+"greenville|SC": [
+34.8514,
+-82.3985
+],
+"greenwood|IN": [
+39.6137,
+-86.1095
+],
+"hackensack|NJ": [
+40.8871,
+-74.0411
+],
+"hammond|LA": [
+30.5044,
+-90.4612
+],
+"hannibal|MO": [
+39.7082,
+-91.3587
+],
+"happy valley|OR": [
+45.4287,
+-122.4972
+],
+"haringen|TX": null,
+"harlan|KY": [
+36.8411,
+-83.2268
+],
+"hartford|CT": [
+41.7646,
+-72.6909
+],
+"hawthorne|NY": [
+41.1044,
+-73.7976
+],
+"hayward|WI": [
+46.013,
+-91.4849
+],
+"hazard|KY": [
+37.249,
+-83.1934
+],
+"hem/onc outside nashville|TN": null,
+"hem/onc ||NH": null,
+"hematologist / oncologist -|NE": null,
+"hematologist|MD": null,
+"hematology / oncology|MD": null,
+"hematology oncology | nebraska|MD": null,
+"hematology oncology|MD": null,
+"hematology/oncology|MD": null,
+"hematology|MD": null,
+"hendersonville|NC": [
+35.3187,
+-82.461
+],
+"henderson|NV": [
+36.032,
+-114.9823
+],
+"hickory|NC": [
+35.7333,
+-81.3443
+],
+"hilo|HI": [
+19.7074,
+-155.0816
+],
+"hollywood|FL": [
+26.0112,
+-80.1495
+],
+"houston-area | league city|TX": null,
+"huntingdon|TN": [
+36.0009,
+-88.428
+],
+"huntington|WV": [
+38.4192,
+-82.4452
+],
+"hyde park|NY": [
+41.7842,
+-73.9374
+],
+"idaho falls|ID": [
+43.4888,
+-112.0363
+],
+"iron mountain|MI": [
+45.8202,
+-88.066
+],
+"irvine, orange|CA": [
+33.6857,
+-117.826
+],
+"islip|NY": [
+40.7301,
+-73.2107
+],
+"issaquah|WA": [
+47.5349,
+-122.0433
+],
+"jacksonville|NC": [
+34.751,
+-77.431
+],
+"janesville|WI": [
+42.683,
+-89.0227
+],
+"jasper|IN": [
+41.0322,
+-87.1067
+],
+"jenkintown|PA": [
+40.096,
+-75.1257
+],
+"johnson city|NY": [
+42.1157,
+-75.9588
+],
+"johnson city|TN": [
+36.3168,
+-82.3529
+],
+"jonesboro|AR": [
+35.8348,
+-90.7045
+],
+"joplin|MO": [
+37.0842,
+-94.5133
+],
+"kalispell|MT": [
+48.2022,
+-114.3153
+],
+"kankakee|IL": [
+41.1254,
+-87.8487
+],
+"kansas city|KS": [
+39.1135,
+-94.6265
+],
+"keene|NH": [
+42.9336,
+-72.2784
+],
+"ketchikan|AK": [
+55.3431,
+-131.6467
+],
+"kettering|OH": [
+39.6895,
+-84.1688
+],
+"keyser|WV": [
+39.4409,
+-78.9739
+],
+"kingston|NY": [
+41.9288,
+-74.0024
+],
+"kinston|NC": [
+35.2627,
+-77.5816
+],
+"kissimmee|FL": [
+28.2919,
+-81.4076
+],
+"klamath falls|OR": [
+42.2249,
+-121.7817
+],
+"knoxville|TN": [
+35.9604,
+-83.921
+],
+"lacey|WA": [
+47.0264,
+-122.8072
+],
+"laconia|NH": [
+43.5279,
+-71.4704
+],
+"lafayette|CO": [
+39.9936,
+-105.0897
+],
+"lafayette|IN": [
+40.4191,
+-86.8919
+],
+"lafayette|LA": [
+30.2262,
+-92.0178
+],
+"laguna beach|CA": [
+33.5427,
+-117.7854
+],
+"lake havasu city|AZ": [
+34.4756,
+-114.3286
+],
+"lake show low|AZ": [
+34.3018,
+-110.0222
+],
+"lakeland|FL": [
+28.0395,
+-81.9498
+],
+"lakeport|CA": [
+39.0432,
+-122.9141
+],
+"lancaster|PA": [
+40.038,
+-76.3057
+],
+"langhorne|PA": [
+40.1762,
+-74.9202
+],
+"lansing|MI": [
+42.7338,
+-84.5546
+],
+"laredo|TX": [
+27.5079,
+-99.507
+],
+"las cruces|NM": [
+32.314,
+-106.7798
+],
+"laurinburg|NC": [
+34.774,
+-79.4628
+],
+"lawton|OK": [
+34.6052,
+-98.3952
+],
+"lebanon|NH": [
+43.643,
+-72.2516
+],
+"lebanon|OR": [
+44.5363,
+-122.9072
+],
+"leesburg|VA": [
+39.1155,
+-77.5646
+],
+"lenoir city|TN": [
+35.7973,
+-84.256
+],
+"lewes|DE": [
+38.7734,
+-75.138
+],
+"lewiston|ID": [
+46.4196,
+-117.0216
+],
+"lima|OH": [
+40.74,
+-84.105
+],
+"litchfield|MN": [
+45.1272,
+-94.528
+],
+"littleton|CO": [
+39.6133,
+-105.0166
+],
+"locum tenens position in|CA": null,
+"london|KY": [
+37.1283,
+-84.0836
+],
+"long island|NY": [
+40.8515,
+-73.0994
+],
+"longview|TX": [
+32.5007,
+-94.7405
+],
+"longview|WA": [
+46.1377,
+-122.9345
+],
+"lubbock|TX": [
+33.5856,
+-101.847
+],
+"ludington|MI": [
+43.9555,
+-86.4477
+],
+"lynchburg|VA": [
+37.4138,
+-79.1422
+],
+"lynn haven|FL": [
+30.2455,
+-85.6483
+],
+"macon|GA": [
+32.8407,
+-83.6324
+],
+"manhasset|NY": [
+40.7867,
+-73.6967
+],
+"manteca|CA": [
+37.7986,
+-121.2117
+],
+"maple grove|MN": [
+45.0985,
+-93.4419
+],
+"marble falls|TX": [
+30.5778,
+-98.2757
+],
+"marion|IL": [
+38.6477,
+-88.9232
+],
+"marion|OH": [
+40.5885,
+-83.1895
+],
+"marlborough|MA": [
+42.3469,
+-71.5525
+],
+"marmora|NJ": [
+39.2595,
+-74.6571
+],
+"marquette|MI": [
+46.4482,
+-87.6306
+],
+"marshfield|WI": [
+44.6662,
+-90.174
+],
+"martinsburg|WV": [
+39.4563,
+-77.964
+],
+"martinsville|VA": [
+36.6915,
+-79.8725
+],
+"mary bird perkins - alexandria|LA": null,
+"mason city|IA": [
+43.1525,
+-93.2018
+],
+"mather|CA": [
+37.8821,
+-119.8557
+],
+"matthews|NC": [
+35.116,
+-80.7224
+],
+"mattoon|IL": [
+39.4843,
+-88.3773
+],
+"maui|HI": [
+20.803,
+-156.3107
+],
+"mcallen|TX": [
+26.2041,
+-98.2301
+],
+"medical oncologist|MD": null,
+"melbourne|FL": [
+28.0785,
+-80.6078
+],
+"miami beach|FL": [
+25.7929,
+-80.1353
+],
+"middlesboro|KY": [
+36.6073,
+-83.7143
+],
+"middletown|NY": [
+41.4501,
+-74.4165
+],
+"minocqua|WI": [
+45.8713,
+-89.711
+],
+"mishawaka|IN": [
+41.6612,
+-86.1807
+],
+"mission hills|CA": [
+34.6876,
+-120.439
+],
+"mobile|AL": [
+30.6913,
+-88.0438
+],
+"monmouth county|NJ": [
+40.2932,
+-74.1671
+],
+"monroe|LA": [
+32.5025,
+-92.1162
+],
+"monroe|MI": [
+41.9153,
+-83.5136
+],
+"montgomery|AL": [
+32.3777,
+-86.3091
+],
+"montrose|CO": [
+38.4375,
+-108.2404
+],
+"mooresville|NC": [
+35.5849,
+-80.8101
+],
+"morristown|TN": [
+36.214,
+-83.2949
+],
+"mount carmel|IL": [
+38.4109,
+-87.7614
+],
+"mount pleasant|TX": [
+33.1571,
+-94.9694
+],
+"mount pleasant|WI": [
+42.7192,
+-87.8543
+],
+"mt. airy|NC": [
+36.4994,
+-80.6072
+],
+"muncy|PA": [
+41.2048,
+-76.7871
+],
+"murray|UT": [
+40.6668,
+-111.8884
+],
+"murrells inlet|SC": [
+33.5475,
+-79.064
+],
+"muscle shoals|AL": [
+34.7437,
+-87.6533
+],
+"myrtle beach|SC": [
+33.6956,
+-78.89
+],
+"nags head|NC": [
+35.9574,
+-75.6241
+],
+"naples|FL": [
+26.1422,
+-81.7943
+],
+"nasheville|TN": null,
+"new hartford|NY": [
+43.0731,
+-75.2879
+],
+"new hyde park|NY": [
+40.7352,
+-73.6883
+],
+"new smyrna beach|FL": [
+29.0258,
+-80.9271
+],
+"new york (manhattan) county|NY": [
+40.7506,
+-73.9688
+],
+"new york city|NY": [
+40.7127,
+-74.006
+],
+"newberg|OR": [
+45.3003,
+-122.9728
+],
+"newburgh|IN": [
+37.9457,
+-87.4047
+],
+"newport news|VA": [
+36.9775,
+-76.4298
+],
+"newport|OR": [
+44.6368,
+-124.0534
+],
+"newton|KS": [
+38.0469,
+-97.3447
+],
+"norfolk|NE": [
+42.0283,
+-97.417
+],
+"norfolk|VA": [
+36.8494,
+-76.29
+],
+"normal|IL": [
+40.5093,
+-88.9844
+],
+"north little rock|AR": [
+34.7695,
+-92.2671
+],
+"norwich|CT": [
+41.5244,
+-72.0759
+],
+"norwich|NY": [
+42.5312,
+-75.5235
+],
+"novato|CA": [
+38.1062,
+-122.5681
+],
+"nv and bullhead city (bhc)|AZ": null,
+"o'fallon|IL": [
+38.5923,
+-89.9112
+],
+"oak lawn|IL": [
+41.7109,
+-87.7581
+],
+"oakland|MD": [
+39.4099,
+-79.4063
+],
+"ocala|FL": [
+29.1872,
+-82.1401
+],
+"old bridge|NJ": [
+40.3992,
+-74.3409
+],
+"olney|IL": [
+38.7297,
+-88.0847
+],
+"olympia|WA": [
+47.0451,
+-122.895
+],
+"on cape cod|MA": [
+41.7907,
+-70.5218
+],
+"oncologist|MD": null,
+"oncology in idaho falls|ID": null,
+"opelousas|LA": [
+30.5335,
+-92.0815
+],
+"or oakland|CA": null,
+"or paducah|KY": null,
+"oregon city|OR": [
+45.3573,
+-122.6068
+],
+"orland park|IL": [
+41.6307,
+-87.8536
+],
+"osage beach|MO": [
+38.126,
+-92.6723
+],
+"oviedo|FL": [
+28.6703,
+-81.2085
+],
+"owensboro|KY": [
+37.7742,
+-87.1133
+],
+"owosso|MI": [
+42.9976,
+-84.1721
+],
+"paducah|KY": [
+37.0834,
+-88.6
+],
+"pagosa springs|CO": [
+37.2696,
+-107.0108
+],
+"palm beach county|FL": [
+26.628,
+-80.4494
+],
+"palm desert|CA": [
+33.7288,
+-116.3826
+],
+"panama city|FL": [
+30.1587,
+-85.6603
+],
+"paramus|NJ": [
+40.9453,
+-74.0736
+],
+"paris|TX": [
+33.6618,
+-95.5555
+],
+"parkersburg|WV": [
+39.2667,
+-81.5621
+],
+"parsippany|NJ": [
+40.8624,
+-74.4032
+],
+"pendleton|OR": [
+45.6721,
+-118.7886
+],
+"peoria|IL": [
+40.6939,
+-89.5891
+],
+"petaluma|CA": [
+38.2326,
+-122.6365
+],
+"petersburg|VA": [
+37.2279,
+-77.4019
+],
+"physician -|MD": [
+39.3313,
+-76.631
+],
+"pierre|SD": [
+44.3684,
+-100.3511
+],
+"pittsburg|KS": [
+37.4109,
+-94.705
+],
+"plattsburgh|NY": [
+44.6961,
+-73.4543
+],
+"pleasant hill|CA": [
+37.948,
+-122.0608
+],
+"plymouth|MA": [
+41.9427,
+-70.7619
+],
+"poplar bluff|MO": [
+36.7563,
+-90.3945
+],
+"port angeles|WA": [
+48.1181,
+-123.4307
+],
+"potsdam|NY": [
+44.6698,
+-74.9813
+],
+"poughkeepsie|NY": [
+41.7066,
+-73.9284
+],
+"prescott|AZ": [
+34.54,
+-112.4688
+],
+"presque isle|ME": [
+46.6812,
+-68.0155
+],
+"prestonsburg|KY": [
+37.6671,
+-82.7752
+],
+"princeton|MN": [
+45.5698,
+-93.5803
+],
+"princeton|WV": [
+37.3663,
+-81.1027
+],
+"purchase|NY": [
+41.0406,
+-73.7145
+],
+"queens|NY": [
+40.7135,
+-73.8283
+],
+"quincy|IL": [
+39.9356,
+-91.4099
+],
+"quincy|MA": [
+42.251,
+-71.0037
+],
+"racine|WI": [
+42.7314,
+-87.7835
+],
+"ranson|WV": [
+39.2953,
+-77.8604
+],
+"reed city|MI": [
+43.875,
+-85.5101
+],
+"rego park|NY": [
+40.7229,
+-73.8621
+],
+"rehoboth beach|DE": [
+38.7165,
+-75.0835
+],
+"reidsville|NC": [
+36.3549,
+-79.6645
+],
+"remote position|MO": null,
+"remote|CA": [
+34.378,
+-117.2431
+],
+"remote|OR": [
+43.0059,
+-123.8926
+],
+"reno|NV": [
+39.5262,
+-119.8127
+],
+"rhinebeck|NY": [
+41.9268,
+-73.9128
+],
+"rhinelander|WI": [
+45.6366,
+-89.4121
+],
+"richmond|CA": [
+37.9358,
+-122.3477
+],
+"richmond|IN": [
+39.8287,
+-84.8899
+],
+"roanoke|VA": [
+37.271,
+-79.9414
+],
+"rochester|MI": [
+42.6806,
+-83.1338
+],
+"rochester|NY": [
+43.1573,
+-77.6152
+],
+"rockford|IL": [
+42.2714,
+-89.094
+],
+"rockport|ME": [
+44.1875,
+-69.073
+],
+"rockville centre|NY": [
+40.6574,
+-73.6451
+],
+"rocky mount|NC": [
+35.9424,
+-77.7957
+],
+"rolla|MO": [
+37.9509,
+-91.7708
+],
+"rome|GA": [
+34.257,
+-85.1647
+],
+"saginaw|MI": [
+43.42,
+-83.949
+],
+"saint george|UT": [
+37.1099,
+-113.5937
+],
+"saint joseph|MI": [
+41.9032,
+-85.5357
+],
+"salem|VA": [
+37.2932,
+-80.0557
+],
+"salina|KS": [
+38.8403,
+-97.6114
+],
+"salisbury|MD": [
+38.366,
+-75.601
+],
+"salisbury|NC": [
+35.671,
+-80.4742
+],
+"san fernando valley|CA": [
+34.2149,
+-118.4998
+],
+"san gabriel|CA": [
+34.0991,
+-118.1086
+],
+"san marcos|CA": [
+33.1353,
+-117.1743
+],
+"sanford and south portland|ME": null,
+"sanford|ME": [
+43.4387,
+-70.7746
+],
+"santa fe|NM": [
+35.6876,
+-105.9385
+],
+"saratoga springs|UT": [
+40.3863,
+-111.913
+],
+"sault ste. marie|MI": [
+46.4977,
+-84.3477
+],
+"savannah|GA": [
+32.079,
+-81.0921
+],
+"scarborough|ME": [
+43.59,
+-70.3346
+],
+"scranton|PA": [
+41.4087,
+-75.6621
+],
+"seaford|DE": [
+38.6413,
+-75.6115
+],
+"seaside|OR": [
+45.9932,
+-123.9202
+],
+"seattle (capitol hill)|WA": [
+47.6333,
+-122.3419
+],
+"seymour|IN": [
+38.9592,
+-85.8903
+],
+"sheboygan|WI": [
+43.7129,
+-87.937
+],
+"show low|AZ": [
+34.2542,
+-110.0298
+],
+"shreveport|LA": [
+32.5135,
+-93.7478
+],
+"silver spring|MD": [
+38.9998,
+-77.024
+],
+"silverdale|WA": [
+47.6594,
+-122.6766
+],
+"sonora|CA": [
+37.9853,
+-120.3835
+],
+"south bend|IN": [
+41.6834,
+-86.25
+],
+"south charleston|WV": [
+38.3684,
+-81.6996
+],
+"south portland|ME": [
+43.6382,
+-70.2529
+],
+"south sacramento|CA": [
+38.511,
+-121.4605
+],
+"southbridge|MA": [
+42.075,
+-72.0337
+],
+"southern california|CA": [
+33.951,
+-118.2063
+],
+"southwest|OH": null,
+"spring hill|FL": [
+28.4635,
+-82.5364
+],
+"springfield|IL": [
+39.799,
+-89.644
+],
+"springfield|MA": [
+42.1019,
+-72.5887
+],
+"springfield|MO": [
+37.2082,
+-93.2923
+],
+"springfield|OH": [
+39.9234,
+-83.8101
+],
+"st paul|MN": [
+44.9497,
+-93.0931
+],
+"st. cloud|MN": [
+45.5616,
+-94.1642
+],
+"staten island|NY": [
+40.5835,
+-74.1496
+],
+"statesville|NC": [
+35.7828,
+-80.8874
+],
+"steamboat springs|CO": [
+40.4848,
+-106.8317
+],
+"stevens point|WI": [
+44.5234,
+-89.5844
+],
+"stroudsburg|PA": [
+40.9864,
+-75.1947
+],
+"stuart|FL": [
+27.198,
+-80.2519
+],
+"sugar land|TX": [
+29.6197,
+-95.6349
+],
+"syracuse|NY": [
+43.0481,
+-76.1474
+],
+"tarboro|NC": [
+35.8968,
+-77.5358
+],
+"temple|TX": [
+31.0984,
+-97.343
+],
+"terre haute|IN": [
+39.4667,
+-87.4139
+],
+"texarkana|TX": [
+33.4466,
+-94.0766
+],
+"the asheville|VA": null,
+"thomaston|GA": [
+32.8882,
+-84.3266
+],
+"toledo|OH": [
+41.6529,
+-83.5378
+],
+"toms river|NJ": [
+39.9528,
+-74.1967
+],
+"towson|MD": [
+39.3965,
+-76.6148
+],
+"troy|OH": [
+40.0395,
+-84.2033
+],
+"turlock|CA": [
+37.4947,
+-120.8466
+],
+"tuscon|AZ": [
+32.1976,
+-111.0808
+],
+"uniontown|PA": [
+39.9009,
+-79.7259
+],
+"upper marlboro|MD": [
+38.8162,
+-76.7517
+],
+"urbana|IL": [
+40.1117,
+-88.2073
+],
+"vacaville|CA": [
+38.3566,
+-121.9877
+],
+"valhalla|NY": [
+41.0752,
+-73.775
+],
+"vancouver|WA": [
+45.6307,
+-122.6745
+],
+"vero beach|FL": [
+27.6387,
+-80.3975
+],
+"victoria|TX": [
+28.8026,
+-96.9766
+],
+"vincennes|IN": [
+38.6773,
+-87.5286
+],
+"virginia beach|VA": [
+36.8497,
+-75.9761
+],
+"waconia|MN": [
+44.8508,
+-93.7869
+],
+"waco|TX": [
+31.5545,
+-97.1326
+],
+"wailuku|HI": [
+20.8895,
+-156.5089
+],
+"waimea|HI": [
+20.0217,
+-155.6686
+],
+"warren|PA": [
+41.812,
+-79.2654
+],
+"waterbury|CT": [
+41.5541,
+-73.0436
+],
+"waterloo|IA": [
+42.4983,
+-92.3329
+],
+"wausau|WI": [
+44.9598,
+-89.6273
+],
+"weirton|WV": [
+40.4002,
+-80.59
+],
+"west burlington|IA": [
+40.8251,
+-91.1565
+],
+"west columbia|SC": [
+33.9919,
+-81.064
+],
+"west des moines|IA": [
+41.5644,
+-93.7594
+],
+"west hartford|CT": [
+41.762,
+-72.742
+],
+"west new york|NY": [
+40.5761,
+-73.9759
+],
+"west palm beach|FL": [
+26.7154,
+-80.0533
+],
+"weston|WI": [
+44.9055,
+-89.5726
+],
+"wethersfield|CT": [
+41.7143,
+-72.6526
+],
+"wheeling|WV": [
+40.064,
+-80.7209
+],
+"wichita falls|TX": [
+33.9005,
+-98.5021
+],
+"williston|ND": [
+48.1465,
+-103.6218
+],
+"wilmington|NC": [
+34.2353,
+-77.9487
+],
+"winchester|MA": [
+42.4523,
+-71.137
+],
+"winchester|VA": [
+39.1852,
+-78.1652
+],
+"winston salem|NC": [
+36.0998,
+-80.2441
+],
+"winston-salem|NC": [
+36.0998,
+-80.2441
+],
+"worcester|MA": [
+42.2626,
+-71.8019
+],
+"zachary|LA": [
+30.6485,
+-91.1565
+],
+"zion|IL": [
+42.4501,
+-87.8338
+],
+"\u2013 boston international place \u2013|MA": null
+}

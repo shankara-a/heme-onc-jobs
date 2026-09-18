@@ -22,8 +22,9 @@
 
   const state = {
     jobs: [], filtered: [], shown: 40,
-    f: { state: "CA", types: new Set(TYPE_ORDER), sub: "", source: "", q: "", salary: false, md: true, effort: false, fresh: false, sort: "posted" },
-    map: null, markers: null, charts: {},
+    f: { state: "CA", types: new Set(TYPE_ORDER), sub: "", source: "", q: "", salary: false, md: true, effort: false, fresh: false, sort: "posted",
+         near: null /* {label, lat, lon} */, radius: 50 },
+    cities: {}, map: null, markers: null, charts: {},
   };
 
   // ---------- helpers ----------
@@ -34,6 +35,14 @@
   const typeColor = (t) => cssVar(`--t-${TYPE_LABEL[t] ? t : "unknown"}`);
   const salaryMid = (j) => j.salary && j.salary.min ? (j.salary.max ? (j.salary.min + j.salary.max) / 2 : j.salary.min) : null;
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  const distMi = (lat1, lon1, lat2, lon2) => {
+    const R = 3958.8, toR = Math.PI / 180, dLat = (lat2 - lat1) * toR, dLon = (lon2 - lon1) * toR;
+    const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * toR) * Math.cos(lat2 * toR) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(a));
+  };
+  const jobDist = (j) => (state.f.near && j.location.lat != null && j.location.geo_precision === "city")
+    ? distMi(state.f.near.lat, state.f.near.lon, j.location.lat, j.location.lon) : null;
 
   function salaryText(j) {
     const s = j.salary || {};
@@ -46,7 +55,8 @@
   function applyFilters() {
     const f = state.f, q = f.q.trim().toLowerCase();
     let out = state.jobs.filter((j) => {
-      if (f.state && j.location.state !== f.state && !(f.state === "REMOTE" && j.remote)) return false;
+      if (f.near) { const d = jobDist(j); if (d == null || d > f.radius) return false; }
+      else if (f.state && j.location.state !== f.state && !(f.state === "REMOTE" && j.remote)) return false;
       if (!f.types.has(j.job_type)) return false;
       if (f.sub && !(j.subspecialties || []).includes(f.sub)) return false;
       if (f.source && j.source_name !== f.source) return false;
@@ -66,6 +76,7 @@
       salary_asc: (a, b) => (salaryMid(a) || Infinity) - (salaryMid(b) || Infinity),  // undisclosed still last
       clinical: (a, b) => ((b.effort.research ?? (b.effort.clinical != null ? 100 - b.effort.clinical : -1)) - (a.effort.research ?? (a.effort.clinical != null ? 100 - a.effort.clinical : -1))),
       employer: (a, b) => (a.employer || "").localeCompare(b.employer || ""),
+      distance: (a, b) => (jobDist(a) ?? 1e9) - (jobDist(b) ?? 1e9),
     };
     out.sort(sorters[f.sort] || sorters.posted);
     state.filtered = out;
@@ -86,7 +97,7 @@
     const byType = TYPE_ORDER.map((t) => [t, js.filter((j) => j.job_type === t).length]).filter(([, n]) => n);
     const pct = js.length ? Math.round(100 * withSal.length / js.length) : 0;
     $("#stats").innerHTML = [
-      [js.length, `postings · ${state.f.state ? (STATES[state.f.state] || state.f.state) : "all states"}`, ""],
+      [js.length, `postings · ${state.f.near ? `within ${state.f.radius} mi of ${state.f.near.label}` : state.f.state ? (STATES[state.f.state] || state.f.state) : "all states"}`, state.f.near ? "postings without a known city are excluded" : ""],
       [withSal.length, `with salary (${pct}%)`, ""],
       [median ? fmt$(median) : "—", "median posted", "midpoint of disclosed ranges"],
       [effort, "state a time split", "clinical / research / admin"],
@@ -117,6 +128,8 @@
     el.querySelector(".employer").textContent = j.employer || "—";
     const loc = [j.location.city, j.location.state].filter(Boolean).join(", ") || j.location.text || "";
     el.querySelector(".loc").textContent = (j.remote ? "Remote · " : "") + loc;
+    const dm = jobDist(j);
+    if (dm != null) el.querySelector(".loc").insertAdjacentHTML("afterend", `<span class="dist">${Math.round(dm)} mi</span>`);
     const d = daysAgo(j.posted_date || j.first_seen);
     el.querySelector(".posted").textContent = d == null ? "" : d === 0 ? "Today" : d === 1 ? "Yesterday" : d < 30 ? `${d} d ago` : fmtDate(j.posted_date || j.first_seen);
 
@@ -193,7 +206,10 @@
         (n > 8 ? `<div class="m">…and ${n - 8} more (filter the list to see them)</div>` : ""), { maxWidth: 360 });
       m.addTo(state.markers); bounds.push([g.lat, g.lon]);
     });
-    if (bounds.length) state.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 8 });
+    if (state.f.near) {
+      L.circle([state.f.near.lat, state.f.near.lon], { radius: state.f.radius * 1609.34, color: cssVar("--accent"), weight: 1.5, fillOpacity: .06, interactive: false }).addTo(state.markers);
+      state.map.setView([state.f.near.lat, state.f.near.lon], state.f.radius <= 25 ? 9 : state.f.radius <= 50 ? 8 : state.f.radius <= 100 ? 7 : 6);
+    } else if (bounds.length) state.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 8 });
     setTimeout(() => state.map.invalidateSize(), 50);
   }
 
@@ -397,7 +413,37 @@
       if (c.classList.contains("on")) state.f.types.add(v); else state.f.types.delete(v);
       applyFilters();
     }));
+    function setNear(near) {
+      state.f.near = near;
+      $("#f-near").classList.toggle("on", !!near);
+      $("#sort-distance").hidden = !near;
+      if (near) { $("#f-near").value = near.label; $("#f-state").value = ""; state.f.state = ""; $("#f-sort").value = "distance"; state.f.sort = "distance"; }
+      else if (state.f.sort === "distance") { $("#f-sort").value = "posted"; state.f.sort = "posted"; }
+      applyFilters();
+    }
+    const resolveCity = (text) => {
+      const t = text.trim().toLowerCase();
+      if (!t) return null;
+      const keys = Object.keys(state.cities);
+      const exact = keys.find((k) => k.toLowerCase() === t) || keys.find((k) => k.toLowerCase().startsWith(t + ","));
+      const k = exact || keys.find((k) => k.toLowerCase().startsWith(t));
+      return k ? { label: k, lat: state.cities[k][0], lon: state.cities[k][1] } : null;
+    };
+    $("#f-near").addEventListener("change", (e) => {
+      const near = resolveCity(e.target.value);
+      if (!near && e.target.value.trim()) { e.target.setCustomValidity("Unknown city — pick one from the list"); e.target.reportValidity(); return; }
+      e.target.setCustomValidity(""); setNear(near);
+    });
+    $("#f-near").addEventListener("input", (e) => { if (!e.target.value.trim() && state.f.near) setNear(null); });
+    $("#f-radius").addEventListener("change", (e) => { state.f.radius = +e.target.value; if (state.f.near) applyFilters(); });
+    $("#f-geo").addEventListener("click", () => {
+      if (!navigator.geolocation) return alert("Geolocation is not available in this browser.");
+      navigator.geolocation.getCurrentPosition(
+        (pos) => setNear({ label: "my location", lat: pos.coords.latitude, lon: pos.coords.longitude }),
+        () => alert("Could not get your location."), { timeout: 8000 });
+    });
     $("#f-reset").addEventListener("click", () => {
+      $("#f-near").value = ""; state.f.near = null; $("#f-near").classList.remove("on"); $("#sort-distance").hidden = true;
       state.f = { state: "", types: new Set(TYPE_ORDER), sub: "", source: "", q: "", salary: false, md: false, effort: false, fresh: false, sort: "posted" };
       $("#f-state").value = ""; $("#f-sub").value = ""; $("#f-source").value = ""; $("#f-q").value = ""; $("#f-sort").value = "posted";
       ["#f-salary", "#f-md", "#f-effort", "#f-new"].forEach((s) => $(s).checked = false);
@@ -441,6 +487,14 @@
       $("#job-list").innerHTML = `<div class="empty">No data yet. Run <code>python -m scraper.run</code> (or wait for the GitHub Action) to generate <code>data/jobs.json</code>.</div>`;
       return;
     }
+    try {
+      const c = await (await fetch("data/cities.json", { cache: "no-cache" })).json();
+      state.cities = c;
+      const used = new Set(state.jobs.filter((j) => j.location.city && j.location.geo_precision === "city").map((j) => `${j.location.city}, ${j.location.state}`));
+      // Cities that have postings first, then the rest of the table.
+      const opts = [...Object.keys(c).filter((k) => used.has(k)), ...Object.keys(c).filter((k) => !used.has(k))];
+      $("#city-list").innerHTML = opts.map((k) => `<option value="${esc(k)}"></option>`).join("");
+    } catch (e) { /* near-search unavailable without cities.json */ }
     populateSelects();
     applyFilters();
   }

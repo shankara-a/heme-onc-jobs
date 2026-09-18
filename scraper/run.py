@@ -16,7 +16,7 @@ import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from . import extract, geo, llm_enrich
+from . import extract, geo, geocode, llm_enrich
 from .sources import ash, greenhouse, madgex, practicematch, stanford, ucrecruit, workday
 from .text import norm_key, stable_id
 
@@ -25,6 +25,8 @@ DATA = ROOT / "data"
 JOBS_PATH = DATA / "jobs.json"
 META_PATH = DATA / "meta.json"
 LLM_CACHE = DATA / "llm_cache.json"
+GEOCODE_CACHE = DATA / "geocode_cache.json"
+CITIES_PATH = DATA / "cities.json"
 DESCRIPTION_CAP = 2500
 
 SOURCES = {
@@ -209,7 +211,9 @@ def main(argv=None) -> int:
     # `python -m scraper.enrich_local` on a laptop); only call the API if a key is set.
     n_cached = llm_enrich.apply_cache(jobs, LLM_CACHE)
     log.info("applied cached LLM enrichment to %d jobs", n_cached)
+    log.info("dropped %d junk city names", geo.sanitize_locations(jobs))
     log.info("city-in-text fallback placed %d more postings", geo.place_by_text(jobs))
+    log.info("geocoded %d postings whose city is outside the built-in table", geocode.geocode_jobs(jobs, GEOCODE_CACHE, CITIES_PATH))
     if not args.no_llm:
         llm_enrich.enrich(jobs, LLM_CACHE)
 

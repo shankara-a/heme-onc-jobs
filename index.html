@@ -10,7 +10,7 @@
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.4/build/index.umd.min.js"></script>
-<link rel="stylesheet" href="assets/styles.css?v=12" />
+<link rel="stylesheet" href="assets/styles.css?v=13" />
 </head>
 <body>
 
@@ -55,6 +55,14 @@
     </div>
     <div class="frow">
       <input id="f-q" type="search" placeholder="Search title, employer, city, keyword…" />
+      <span class="near">
+        <input id="f-near" type="search" list="city-list" placeholder="Near city…" autocomplete="off" title="Show postings within a radius of a city" />
+        <datalist id="city-list"></datalist>
+        <select id="f-radius" title="Radius">
+          <option value="25">25 mi</option><option value="50" selected>50 mi</option><option value="100">100 mi</option><option value="200">200 mi</option>
+        </select>
+        <button id="f-geo" class="icon-btn small" title="Use my location" aria-label="Use my location">◎</button>
+      </span>
       <label class="tog"><input type="checkbox" id="f-salary" /><span>Salary disclosed</span></label>
       <label class="tog"><input type="checkbox" id="f-md" checked /><span>MD/DO required</span></label>
       <label class="tog"><input type="checkbox" id="f-effort" /><span>Time split stated</span></label>
@@ -73,6 +81,7 @@
       <div class="panel-actions">
         <select id="f-sort" class="btn-sm" title="Sort">
           <option value="posted">Newest first</option>
+        <option value="distance" id="sort-distance" hidden>Nearest first</option>
           <option value="salary">Salary: high → low</option>
           <option value="salary_asc">Salary: low → high</option>
           <option value="clinical">Most research time</option>
@@ -190,6 +199,6 @@
   </article>
 </template>
 
-<script defer src="assets/app.js?v=12"></script>
+<script defer src="assets/app.js?v=13"></script>
 </body>
 </html>

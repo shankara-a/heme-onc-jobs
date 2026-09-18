@@ -182,6 +182,16 @@ def parse_location(text: str | None) -> tuple[str | None, str | None]:
     'La Jolla, CA, USA', 'United States - Remote', 'California'."""
     if not text:
         return None, None
+    # "San Francisco, CA or Oakland, CA" / "Fort Myers and Cape Coral, FL": use the first alternative
+    # when it already names a state; otherwise borrow the state from the full string.
+    alt = re.split(r"\s+(?:or|and|&)\s+", text, maxsplit=1)
+    if len(alt) == 2:
+        c1, s1 = parse_location(alt[0])
+        if s1:
+            return c1, s1
+        c2, s2 = parse_location(alt[1])
+        if s2 and c1 is None and looks_like_city(alt[0]):
+            return alt[0].strip().title(), s2
     t = re.sub(r"\b(USA?|United States(?: of America)?)\b", "", text, flags=re.I)
     t = re.sub(r"\s*[-–|]\s*(Remote|Hybrid|Field).*$", "", t, flags=re.I)
     parts = [p.strip() for p in re.split(r"[,/]", t) if p.strip()]
@@ -193,26 +203,53 @@ def parse_location(text: str | None) -> tuple[str | None, str | None]:
         elif state and not city:
             city = p
     if not state:
-        # "San Diego CA" or trailing code without comma
-        m = _STATE_CODE_RE.search(t)
+        # "San Diego, CA 92101" style: a bare code only counts right after a comma —
+        # otherwise "Hematologist/Oncologist - MD" would become Maryland.
+        m = re.search(r",\s*([A-Z]{2})\b", t)
         if m and m.group(1) in STATES:
             state = m.group(1)
             city = t[: m.start()].strip(" ,") or None
-        elif parts:
-            for p in parts:
-                if state_code(p):
-                    state = state_code(p)
     if not state:
         # "Northern California", "Central Valley California", "Metro South Carolina"
         for name, code in _NAME_TO_CODE.items():
             if re.search(r"\b" + re.escape(name) + r"\b", t, re.I):
                 state = code
                 break
+    if city:
+        city = re.split(r"\s+(?:or|and|&)\s+|/", city)[0].strip(" -–|,")
     if city and city.lower() == (STATES.get(state or "") or "").lower():
         city = None
     if city and city.lower() in ("new york city", "nyc", "manhattan"):
         city = "New York"
+    if city and not looks_like_city(city):
+        city = None
     return (city.title() if city else None), state
+
+
+_NOT_CITY_RE = re.compile(
+    r"[|–/#$%]|\bfacility|\bposition|\bfaculty|\bremote|hematolog|oncolog|physician|\bhem\b|\bonc\b|\barea\b|"
+    r"\boutside\b|\bnear\b|\bopportunit|\bjob\b|\bclinical\b|\bacademic\b|\bmedical\b|\bgreater\b|\d",
+    re.I,
+)
+
+
+def looks_like_city(city: str) -> bool:
+    c = city.strip()
+    return 2 <= len(c) <= 40 and not _NOT_CITY_RE.search(c) and not c.endswith("-")
+
+
+def sanitize_locations(jobs: list[dict]) -> int:
+    """Drop junk cities produced by earlier parsing (job titles, agency blurbs)."""
+    n = 0
+    for j in jobs:
+        loc = j.get("location") or {}
+        if loc.get("city") and not looks_like_city(loc["city"]):
+            loc["city"] = None
+            ll = STATE_CENTROIDS.get(loc.get("state") or "")
+            loc["lat"], loc["lon"] = (ll[0], ll[1]) if ll else (None, None)
+            loc["geo_precision"] = "state"
+            n += 1
+    return n
 
 
 _CITY_RES: dict[str, re.Pattern] = {}

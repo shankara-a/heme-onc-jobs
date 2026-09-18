@@ -99,6 +99,11 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .sw-academic { background: var(--t-academic); } .sw-community { background: var(--t-community); }
 .sw-industry { background: var(--t-industry); } .sw-government { background: var(--t-government); }
 .sw-locums { background: var(--t-locums); } .sw-unknown { background: var(--t-unknown); }
+.near { display: inline-flex; align-items: center; gap: 4px; }
+.near input { flex: 0 1 150px; min-width: 120px; }
+.near input.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.icon-btn.small { width: 30px; height: 30px; font-size: .95rem; border-radius: 8px; }
+.job-meta .dist { color: var(--accent-dark); font-weight: 600; }
 .tog { display: inline-flex; align-items: center; cursor: pointer; }
 .tog input { position: absolute; opacity: 0; width: 0; height: 0; }
 .tog span { font-size: .8rem; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-2); }

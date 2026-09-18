@@ -29,7 +29,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import geo, llm_enrich
+from . import geo, geocode, llm_enrich
 
 ROOT = Path(__file__).resolve().parent.parent
 JOBS_PATH = ROOT / "data" / "jobs.json"
@@ -175,7 +175,9 @@ def main(argv=None) -> int:
         time.sleep(1)  # be gentle with the subscription rate limiter
 
     n = llm_enrich.apply_cache(jobs, CACHE_PATH)   # LLM city/state first ...
+    geo.sanitize_locations(jobs)
     geo.place_by_text(jobs)                          # ... then the text scan for what is still unplaced
+    geocode.geocode_jobs(jobs, ROOT / "data" / "geocode_cache.json", ROOT / "data" / "cities.json")
     data["generated_at"] = datetime.now(timezone.utc).isoformat()
     JOBS_PATH.write_text(json.dumps(data, separators=(",", ":"), ensure_ascii=False))
     log.info("applied enrichment to %d of %d jobs in %s", n, len(jobs), JOBS_PATH.name)
