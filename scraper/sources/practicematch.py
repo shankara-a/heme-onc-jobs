@@ -22,22 +22,34 @@ _LD_RE = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
 MAX_PAGES = 40
 
 
+_TOTAL_RE = re.compile(r"(\d[\d,]*)\s+(?:jobs|results)", re.I)
+PER_PAGE = 31
+
+
 def _ids() -> list[str]:
-    seen: list[str] = []
-    stale = 0
-    for page in range(1, MAX_PAGES + 1):
-        r = http.get(LIST.format(page=page))
-        if r is None or r.status_code != 200:
-            break
-        ids = [i for i in dict.fromkeys(_ID_RE.findall(r.text)) if i not in seen]
-        if not ids:
-            stale += 1
-            if stale >= 2:
+    """Walk every listing page. Ordering is randomised per request, so we can't
+    stop when a page adds nothing new; instead read the site's own total and
+    visit ceil(total / 31) + 3 pages, then do a second sweep for stragglers."""
+    seen: dict[str, None] = {}
+    pages = MAX_PAGES
+    for sweep in range(2):
+        for page in range(1, pages + 1):
+            r = http.get(LIST.format(page=page))
+            if r is None or r.status_code != 200:
                 break
-            continue
-        stale = 0
-        seen.extend(ids)
-    return seen
+            if page == 1 and sweep == 0:
+                m = _TOTAL_RE.search(re.sub(r"<[^>]+>", " ", r.text))
+                if m:
+                    total = int(m.group(1).replace(",", ""))
+                    pages = min(MAX_PAGES, -(-total // PER_PAGE) + 3)
+                    log.info("PracticeMatch reports %d jobs -> %d pages", total, pages)
+            ids = _ID_RE.findall(r.text)
+            if not ids:
+                break
+            for i in ids:
+                seen.setdefault(i, None)
+        log.info("PracticeMatch sweep %d: %d unique ids", sweep + 1, len(seen))
+    return list(seen)
 
 
 def _detail(jid: str) -> dict | None:
