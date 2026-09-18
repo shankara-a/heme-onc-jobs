@@ -75,7 +75,7 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .tab:hover:not(.active) { background: var(--accent-soft); }
 
 /* Tabs + filters + stats stay pinned while the list scrolls (desktop only) */
-.sticky-head { position: sticky; top: 0; z-index: 30; background: var(--bg); padding: 4px 0 10px; margin: 0 -16px; padding-left: 16px; padding-right: 16px; transition: box-shadow .15s; }
+.sticky-head { position: sticky; top: 0; z-index: 1100; /* above Leaflet controls (1000) */ background: var(--bg); padding: 4px 0 10px; margin: 0 -16px; padding-left: 16px; padding-right: 16px; transition: box-shadow .15s; }
 .sticky-head.stuck { box-shadow: 0 8px 14px -10px rgba(31,41,51,.35); }
 @media (max-width: 720px), (max-height: 700px) { .sticky-head { position: static; } }
 

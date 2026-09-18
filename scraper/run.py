@@ -66,6 +66,8 @@ def normalize(raw: dict) -> dict | None:
         city = tcity
     if raw["source"].startswith("ucrecruit"):
         state = "CA"
+        if not city and raw.get("location_text") and "," not in raw["location_text"]:
+            city = raw["location_text"].split(" or ")[0].strip()  # "San Luis Obispo"
     if city and (any(ch.isdigit() for ch in city) or len(city) > 30):
         city = None  # recruiter HQ street address, not the job's city
     latlon = geo.coords(city, state)
@@ -207,6 +209,7 @@ def main(argv=None) -> int:
     # `python -m scraper.enrich_local` on a laptop); only call the API if a key is set.
     n_cached = llm_enrich.apply_cache(jobs, LLM_CACHE)
     log.info("applied cached LLM enrichment to %d jobs", n_cached)
+    log.info("city-in-text fallback placed %d more postings", geo.place_by_text(jobs))
     if not args.no_llm:
         llm_enrich.enrich(jobs, LLM_CACHE)
 

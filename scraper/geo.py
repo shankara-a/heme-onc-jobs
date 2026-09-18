@@ -83,6 +83,41 @@ CITY_COORDS = {
     ("beverly hills", "CA"): (34.07, -118.40), ("whittier", "CA"): (33.98, -118.03),
     ("west covina", "CA"): (34.07, -117.94), ("pomona", "CA"): (34.06, -117.75),
     ("santa ana", "CA"): (33.75, -117.87), ("huntington beach", "CA"): (33.66, -118.00),
+    ("northridge", "CA"): (34.23, -118.54), ("tarzana", "CA"): (34.17, -118.55), ("simi valley", "CA"): (34.27, -118.78),
+    ("corona", "CA"): (33.88, -117.57), ("cerritos", "CA"): (33.86, -118.06), ("san gabriel", "CA"): (34.10, -118.11),
+    ("oceanside", "CA"): (33.20, -117.38), ("lakeport", "CA"): (39.04, -122.92), ("novato", "CA"): (38.11, -122.57),
+    ("mather", "CA"): (38.55, -121.28), ("turlock", "CA"): (37.49, -120.85), ("merced", "CA"): (37.30, -120.48),
+    ("san rafael", "CA"): (37.97, -122.53), ("pleasant hill", "CA"): (37.95, -122.06), ("dublin", "CA"): (37.70, -121.94),
+    ("pleasanton", "CA"): (37.66, -121.87), ("livermore", "CA"): (37.68, -121.77), ("san leandro", "CA"): (37.72, -122.16),
+    ("castro valley", "CA"): (37.69, -122.09), ("vacaville", "CA"): (38.36, -121.99), ("elk grove", "CA"): (38.41, -121.37),
+    ("auburn", "CA"): (38.90, -121.08), ("grass valley", "CA"): (39.22, -121.06), ("truckee", "CA"): (39.33, -120.18),
+    ("south lake tahoe", "CA"): (38.94, -119.98), ("santa maria", "CA"): (34.95, -120.44), ("lompoc", "CA"): (34.64, -120.46),
+    ("paso robles", "CA"): (35.63, -120.69), ("templeton", "CA"): (35.55, -120.71), ("atascadero", "CA"): (35.49, -120.67),
+    ("hanford", "CA"): (36.33, -119.65), ("tulare", "CA"): (36.21, -119.35), ("porterville", "CA"): (36.07, -119.02),
+    ("madera", "CA"): (36.96, -120.06), ("clovis", "CA"): (36.83, -119.70), ("los banos", "CA"): (37.06, -120.85),
+    ("mission hills", "CA"): (34.27, -118.46), ("panorama city", "CA"): (34.22, -118.45), ("woodland hills", "CA"): (34.17, -118.61),
+    ("van nuys", "CA"): (34.19, -118.45), ("encino", "CA"): (34.16, -118.50), ("valencia", "CA"): (34.44, -118.61),
+    ("santa clarita", "CA"): (34.39, -118.54), ("palmdale", "CA"): (34.58, -118.12), ("victorville", "CA"): (34.54, -117.29),
+    ("apple valley", "CA"): (34.50, -117.19), ("hesperia", "CA"): (34.43, -117.30), ("redlands", "CA"): (34.06, -117.18),
+    ("rancho cucamonga", "CA"): (34.11, -117.59), ("upland", "CA"): (34.10, -117.65), ("covina", "CA"): (34.09, -117.89),
+    ("arcadia", "CA"): (34.14, -118.04), ("alhambra", "CA"): (34.10, -118.13), ("monterey park", "CA"): (34.06, -118.12),
+    ("inglewood", "CA"): (33.96, -118.35), ("lynwood", "CA"): (33.93, -118.21), ("bellflower", "CA"): (33.88, -118.12),
+    ("lakewood", "CA"): (33.85, -118.13), ("garden grove", "CA"): (33.77, -117.94), ("laguna hills", "CA"): (33.60, -117.71),
+    ("laguna niguel", "CA"): (33.52, -117.71), ("san clemente", "CA"): (33.43, -117.61), ("san juan capistrano", "CA"): (33.50, -117.66),
+    ("carlsbad", "CA"): (33.16, -117.35), ("vista", "CA"): (33.20, -117.24), ("san marcos", "CA"): (33.14, -117.17),
+    ("poway", "CA"): (32.96, -117.04), ("el cajon", "CA"): (32.79, -116.96), ("la mesa", "CA"): (32.77, -117.02),
+    ("national city", "CA"): (32.68, -117.10), ("indio", "CA"): (33.72, -116.22), ("la quinta", "CA"): (33.66, -116.31),
+    ("palm desert", "CA"): (33.72, -116.37), ("hemet", "CA"): (33.75, -116.97), ("moreno valley", "CA"): (33.94, -117.23),
+    ("santa cruz", "CA"): (36.97, -122.03), ("watsonville", "CA"): (36.91, -121.76), ("gilroy", "CA"): (37.01, -121.57),
+    ("los gatos", "CA"): (37.23, -121.97), ("campbell", "CA"): (37.29, -121.95), ("milpitas", "CA"): (37.43, -121.90),
+    ("burlingame", "CA"): (37.58, -122.35), ("san bruno", "CA"): (37.63, -122.41), ("menlo park", "CA"): (37.45, -122.18),
+    ("marin", "CA"): (38.05, -122.55), ("greenbrae", "CA"): (37.95, -122.53), ("petaluma", "CA"): (38.23, -122.64),
+    ("ukiah", "CA"): (39.15, -123.21), ("fort bragg", "CA"): (39.45, -123.81), ("crescent city", "CA"): (41.76, -124.20),
+    ("yuba city", "CA"): (39.14, -121.62), ("marysville", "CA"): (39.15, -121.59), ("oroville", "CA"): (39.51, -121.56),
+    ("red bluff", "CA"): (40.18, -122.24), ("susanville", "CA"): (40.42, -120.65), ("bishop", "CA"): (37.36, -118.40),
+    ("ridgecrest", "CA"): (35.62, -117.67), ("barstow", "CA"): (34.90, -117.02), ("brawley", "CA"): (32.98, -115.53),
+    ("orange county", "CA"): (33.72, -117.83), ("inland empire", "CA"): (34.00, -117.30), ("central valley", "CA"): (36.75, -119.75),
+    ("bay area", "CA"): (37.65, -122.20), ("silicon valley", "CA"): (37.39, -122.06), ("north coast", "CA"): (40.50, -124.00),
     # Non-CA metros (enough to spread dots sensibly nationwide)
     ("new york", "NY"): (40.71, -74.01), ("boston", "MA"): (42.36, -71.06),
     ("philadelphia", "PA"): (39.95, -75.17), ("pittsburgh", "PA"): (40.44, -79.99),
@@ -178,6 +213,48 @@ def parse_location(text: str | None) -> tuple[str | None, str | None]:
     if city and city.lower() in ("new york city", "nyc", "manhattan"):
         city = "New York"
     return (city.title() if city else None), state
+
+
+_CITY_RES: dict[str, re.Pattern] = {}
+
+
+def find_city_in_text(state: str | None, title: str, text: str) -> str | None:
+    """Best-effort city from free text using the known-city table for that state.
+    Title mentions win; otherwise the most-mentioned city in the description."""
+    if not state:
+        return None
+    if state not in _CITY_RES:
+        names = sorted((c for c, s in CITY_COORDS if s == state), key=len, reverse=True)
+        _CITY_RES[state] = re.compile(r"\b(" + "|".join(map(re.escape, names)) + r")\b", re.I) if names else re.compile(r"(?!x)x")
+    rx = _CITY_RES[state]
+    m = rx.findall(title)
+    if m:
+        return m[0].title()
+    hits = [h.lower() for h in rx.findall(text)]
+    if not hits:
+        return None
+    counts: dict[str, int] = {}
+    for h in hits:
+        counts[h] = counts.get(h, 0) + 1
+    best = max(counts, key=lambda c: (counts[c], -hits.index(c)))
+    return best.title()
+
+
+def place_by_text(jobs: list[dict]) -> int:
+    """For normalized jobs with a state but no city, scan title/description for a
+    known city of that state and set city + coordinates. Returns count placed."""
+    n = 0
+    for j in jobs:
+        loc = j.get("location") or {}
+        if loc.get("state") and not loc.get("city"):
+            c = find_city_in_text(loc["state"], j.get("title", ""), j.get("description", ""))
+            if c:
+                loc["city"] = c
+                ll = coords(c, loc["state"])
+                if ll:
+                    loc["lat"], loc["lon"], loc["geo_precision"] = ll[0], ll[1], "city"
+                n += 1
+    return n
 
 
 def coords(city: str | None, state: str | None) -> tuple[float, float] | None:

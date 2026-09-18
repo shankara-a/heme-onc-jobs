@@ -36,10 +36,12 @@ SCHEMA = {
         "benefits": {"type": "array", "items": {"type": "string"}, "description": "Short benefit phrases actually stated (e.g. '$50k sign-on bonus', 'loan repayment', '6 weeks PTO')"},
         "subspecialties": {"type": "array", "items": {"type": "string"}},
         "call_schedule": {"type": ["string", "null"]},
+        "city": {"type": ["string", "null"], "description": "City where the job is located (not the recruiter's office), else null"},
+        "state": {"type": ["string", "null"], "description": "Two-letter US state code of the job location, else null"},
         "summary": {"type": "string", "description": "One or two sentences a fellow would want to know"},
     },
     "required": ["job_type", "md_required", "salary_min", "salary_max", "clinical_pct", "research_pct",
-                 "admin_pct", "teaching_pct", "effort_note", "benefits", "subspecialties", "call_schedule", "summary"],
+                 "admin_pct", "teaching_pct", "effort_note", "benefits", "subspecialties", "call_schedule", "city", "state", "summary"],
     "additionalProperties": False,
 }
 
@@ -167,3 +169,15 @@ def _apply(job: dict, p: dict) -> None:
         job["subspecialties_llm"] = p["subspecialties"]
     job["call_schedule"] = p.get("call_schedule")
     job["summary"] = p.get("summary")
+    loc = job.get("location")
+    if isinstance(loc, dict) and (p.get("city") or p.get("state")):
+        from . import geo
+        st = geo.state_code(p.get("state")) or loc.get("state")
+        city = p.get("city") if (st == loc.get("state") or not loc.get("state")) else None
+        if (not loc.get("city") and city) or (not loc.get("state") and st):
+            loc["city"] = loc.get("city") or (city.title() if city else None)
+            loc["state"] = loc.get("state") or st
+            ll = geo.coords(loc["city"], loc["state"])
+            if ll:
+                loc["lat"], loc["lon"] = ll
+                loc["geo_precision"] = "city" if (loc["city"] and (loc["city"].lower(), loc["state"]) in geo.CITY_COORDS) else "state"
