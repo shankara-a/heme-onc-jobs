@@ -428,6 +428,8 @@
 
   async function init() {
     wire();
+    const head = $(".sticky-head");
+    if (head) addEventListener("scroll", () => head.classList.toggle("stuck", head.getBoundingClientRect().top <= 0 && scrollY > 40), { passive: true });
     try {
       const r = await fetch("data/jobs.json", { cache: "no-cache" });
       const d = await r.json();

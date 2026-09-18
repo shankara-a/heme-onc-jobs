@@ -10,7 +10,7 @@
 <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.4/build/index.umd.min.js"></script>
-<link rel="stylesheet" href="assets/styles.css?v=9" />
+<link rel="stylesheet" href="assets/styles.css?v=11" />
 </head>
 <body>
 
@@ -27,6 +27,8 @@
   </div>
 </header>
 
+<main class="container">
+<div class="sticky-head">
 <nav class="tabs" role="tablist">
   <div class="tabs-inner">
     <button class="tab active" data-tab="jobs" role="tab">Jobs</button>
@@ -35,8 +37,6 @@
     <button class="tab" data-tab="about" role="tab">Sources &amp; Method</button>
   </div>
 </nav>
-
-<main class="container">
 
   <!-- Filters (shared by Jobs / Map / Insights) -->
   <section class="filters" id="filters">
@@ -64,6 +64,7 @@
   </section>
 
   <section class="stats" id="stats"></section>
+</div>
 
   <!-- JOBS -->
   <section class="panel active" id="tab-jobs" role="tabpanel">
@@ -189,6 +190,6 @@
   </article>
 </template>
 
-<script defer src="assets/app.js?v=10"></script>
+<script defer src="assets/app.js?v=12"></script>
 </body>
 </html>
