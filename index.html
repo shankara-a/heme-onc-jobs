@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Heme/Onc Jobs</title>
+<meta name="description" content="Aggregated hematology-oncology physician job postings across the US with salary, job type, clinical/research split and benefits." />
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.4/build/index.umd.min.js"></script>
+<link rel="stylesheet" href="assets/styles.css?v=9" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <h1>Heme/Onc Jobs</h1>
+      <p class="tagline">Hematology-oncology physician positions across the US — salary, setting, clinical/research split, benefits</p>
+    </div>
+    <div class="header-right">
+      <span id="updated-badge" class="badge">Loading data…</span>
+      <button id="theme-toggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <div class="tabs-inner">
+    <button class="tab active" data-tab="jobs" role="tab">Jobs</button>
+    <button class="tab" data-tab="map" role="tab">Map</button>
+    <button class="tab" data-tab="insights" role="tab">Insights</button>
+    <button class="tab" data-tab="about" role="tab">Sources &amp; Method</button>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- Filters (shared by Jobs / Map / Insights) -->
+  <section class="filters" id="filters">
+    <div class="frow">
+      <select id="f-state" title="State"><option value="">All states</option></select>
+      <div class="chips" id="f-type" title="Job type">
+        <button class="chip on" data-v="academic"><i class="sw sw-academic"></i>Academic</button>
+        <button class="chip on" data-v="community"><i class="sw sw-community"></i>Community</button>
+        <button class="chip on" data-v="industry"><i class="sw sw-industry"></i>Industry</button>
+        <button class="chip on" data-v="government"><i class="sw sw-government"></i>Gov/VA</button>
+        <button class="chip on" data-v="locums"><i class="sw sw-locums"></i>Locums</button>
+        <button class="chip on" data-v="unknown"><i class="sw sw-unknown"></i>Other</button>
+      </div>
+      <select id="f-sub" title="Subspecialty"><option value="">Any subspecialty</option></select>
+      <select id="f-source" title="Source"><option value="">All sources</option></select>
+    </div>
+    <div class="frow">
+      <input id="f-q" type="search" placeholder="Search title, employer, city, keyword…" />
+      <label class="tog"><input type="checkbox" id="f-salary" /><span>Salary disclosed</span></label>
+      <label class="tog"><input type="checkbox" id="f-md" checked /><span>MD/DO required</span></label>
+      <label class="tog"><input type="checkbox" id="f-effort" /><span>Time split stated</span></label>
+      <label class="tog"><input type="checkbox" id="f-new" /><span>New this week</span></label>
+      <button id="f-reset" class="link-btn">Reset</button>
+    </div>
+  </section>
+
+  <section class="stats" id="stats"></section>
+
+  <!-- JOBS -->
+  <section class="panel active" id="tab-jobs" role="tabpanel">
+    <div class="panel-head">
+      <h2 id="jobs-count">Jobs</h2>
+      <div class="panel-actions">
+        <select id="f-sort" class="btn-sm" title="Sort">
+          <option value="posted">Newest first</option>
+          <option value="salary">Salary: high → low</option>
+          <option value="salary_asc">Salary: low → high</option>
+          <option value="clinical">Most research time</option>
+          <option value="employer">Employer A–Z</option>
+        </select>
+        <button id="dl-csv" class="btn-sm">Download CSV</button>
+        <a class="btn-sm" href="data/jobs.json" download>JSON</a>
+      </div>
+    </div>
+    <div id="job-list" class="job-list"></div>
+    <button id="more-btn" class="btn-more hidden">Show more</button>
+  </section>
+
+  <!-- MAP -->
+  <section class="panel" id="tab-map" role="tabpanel">
+    <div class="panel-head">
+      <h2>Where the jobs are</h2>
+      <p class="muted">Dot size = number of postings. Locations without a known city are placed at the state centroid.</p>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="panel" id="tab-insights" role="tabpanel">
+    <div class="dash-grid">
+      <figure class="card card-wide">
+        <figcaption>
+          <strong id="salary-title">Posted base salary by job type</strong><span class="muted" id="salary-sub"> — box = middle 50% of postings, line = median, whiskers = 1.5×IQR, dots = individual postings</span>
+          <div class="seg-row">
+          <div class="seg" id="salary-group" role="radiogroup">
+            <button class="seg-btn on" data-v="type" role="radio" aria-checked="true">By job type</button>
+            <button class="seg-btn" data-v="sub" role="radio" aria-checked="false">By subspecialty</button>
+            <button class="seg-btn" data-v="state" role="radio" aria-checked="false">By state</button>
+          </div>
+          <div class="seg" id="salary-measure" role="radiogroup">
+            <button class="seg-btn on" data-v="mid" role="radio" aria-checked="true">Range midpoint</button>
+            <button class="seg-btn" data-v="min" role="radio" aria-checked="false">Range low</button>
+            <button class="seg-btn" data-v="max" role="radio" aria-checked="false">Range high</button>
+          </div>
+          </div>
+        </figcaption>
+        <div class="chart-wrap tall"><canvas id="chart-salary"></canvas></div>
+        <div class="box-stats" id="table-salary"></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Postings by state</strong><span class="muted"> — top 12 under the current filters (state filter ignored)</span></figcaption>
+        <div class="chart-wrap"><canvas id="chart-state"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Clinical vs. non-clinical time</strong><span class="muted"> — postings that state a split</span></figcaption>
+        <div class="chart-wrap"><canvas id="chart-effort"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Benefits mentioned</strong><span class="muted"> — share of postings under the current filters</span></figcaption>
+        <div class="chart-wrap"><canvas id="chart-benefits"></canvas></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="panel" id="tab-about" role="tabpanel">
+    <div class="prose">
+      <h2>Where the data comes from</h2>
+      <p>A GitHub Action re-scrapes these boards daily and commits <code>data/jobs.json</code>; the site is static. Sources: ASCO Career Center, NEJM CareerCenter, ASH Job Center, PracticeMatch, Inside Higher Ed / Nature / Science Careers, UC Recruit (UCSF, UCLA, UCSD, UC Davis, UC Irvine), Stanford Faculty Positions, and industry career sites on Workday (Amgen, Gilead, Roche/Genentech, BMS, Pfizer, Merck, AstraZeneca, Novartis, Sanofi, GSK) and Greenhouse (Natera, Revolution Medicines, Nurix, Summit, Kymera, Erasca…). Cross-listings are merged; every card links to each board it appears on.</p>
+      <ul id="source-list"></ul>
+      <h2>How fields are derived</h2>
+      <ul>
+        <li><strong>Relevance</strong> — title/description must reference hematology, oncology, leukemia/lymphoma/myeloma, BMT/cell therapy or cancer, and the title must not be a non-physician role (NP/PA, RN, pharmacist, coordinator, MSL…) or another specialty (radiation/surgical/gyn oncology, pathology…).</li>
+        <li><strong>Job type</strong> — keyword scoring: <em>academic</em> (professor, faculty, university, tenure, UC "Clinical X / HS Clinical"), <em>community</em> (private practice, medical group, partnership, wRVU, hospital-employed, large community networks), <em>industry</em> (pharma/biotech, clinical development, medical director, pharmacovigilance), <em>government</em> (VA, NIH, military), <em>locums</em>.</li>
+        <li><strong>MD/DO required</strong> — flagged when the posting references MD/DO, board certification/eligibility, or medical licensure. Postings that accept "MD or PhD" are left unflagged.</li>
+        <li><strong>Salary</strong> — dollar ranges near words like salary/compensation/base; hourly and daily rates are annualized (×2080 h, ×220 d) and marked as such. Bonus, relocation and loan amounts are excluded from salary but captured under benefits. California, Colorado, New York, Washington and several other states legally require ranges in postings, which is why disclosure is highest there.</li>
+        <li><strong>Clinical / research / admin split</strong> — patterns like "80% clinical", "20% protected research time", "3 days/week clinic". When only research is stated, clinical is inferred as the remainder.</li>
+        <li><strong>Benefits</strong> — keyword tags (sign-on bonus, relocation, loan repayment, CME, malpractice/tail, retirement, PTO, partnership track, wRVU/productivity bonus, visa sponsorship, research start-up, 4-day week…).</li>
+        <li><strong>Claude pass</strong> — each posting is also read by Claude (Sonnet) with a fixed extraction schema: job type, MD requirement, base salary, clinical / research / admin / teaching %, benefits as stated, call schedule, and a two-sentence summary. It only reports what the posting states or clearly implies. Postings with this pass show an "AI-read" tag; the raw rule-based read remains the fallback for anything not yet processed.</li>
+      </ul>
+      <p class="muted">All extraction is heuristic. Always confirm details with the posting itself — every card links to the original listing.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>Heme/Onc Jobs · data refreshed daily · built for hematology-oncology fellows</span>
+</footer>
+
+<template id="job-card-tpl">
+  <article class="job">
+    <div class="job-main">
+      <div class="job-title-row">
+        <span class="type-dot"></span>
+        <h3 class="job-title"><a target="_blank" rel="noopener"></a></h3>
+      </div>
+      <div class="job-meta">
+        <span class="employer"></span>
+        <span class="loc"></span>
+        <span class="posted"></span>
+      </div>
+      <div class="job-tags"></div>
+    </div>
+    <div class="job-side">
+      <div class="salary"></div>
+      <div class="effort"></div>
+    </div>
+    <button class="expand" aria-expanded="false" title="Details">▾</button>
+    <div class="job-detail hidden">
+      <div class="detail-grid">
+        <div><h4>Time split</h4><p class="d-effort"></p></div>
+        <div><h4>Benefits</h4><p class="d-benefits"></p></div>
+        <div><h4>Requirements</h4><p class="d-req"></p></div>
+        <div><h4>Listed on</h4><p class="d-sources"></p></div>
+      </div>
+      <p class="d-summary"></p>
+      <details><summary>Posting text</summary><pre class="d-desc"></pre></details>
+    </div>
+  </article>
+</template>
+
+<script defer src="assets/app.js?v=10"></script>
+</body>
+</html>

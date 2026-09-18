@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-18T16:56:25.416185+00:00",
+ "total": 1613,
+ "by_source": {
+  "asco": {
+   "raw": 300,
+   "kept": 236
+  },
+  "nejm": {
+   "raw": 836,
+   "kept": 584
+  },
+  "ash": {
+   "raw": 94,
+   "kept": 83
+  },
+  "ucrecruit": {
+   "raw": 63,
+   "kept": 27
+  },
+  "greenhouse": {
+   "raw": 44,
+   "kept": 15
+  },
+  "science": {
+   "raw": 23,
+   "kept": 10
+  },
+  "nature": {
+   "raw": 99,
+   "kept": 17
+  },
+  "ihe": {
+   "raw": 691,
+   "kept": 172
+  },
+  "practicematch": {
+   "raw": 661,
+   "kept": 635
+  },
+  "workday": {
+   "raw": 27,
+   "kept": 12
+  }
+ },
+ "by_state": {
+  "CA": 158,
+  "PA": 99,
+  "NC": 91,
+  "MD": 86,
+  "FL": 77,
+  "NY": 76,
+  "OH": 66,
+  "TX": 64,
+  "VA": 59,
+  "MA": 50,
+  "KY": 48,
+  "IL": 46,
+  "IN": 41,
+  "WV": 40,
+  "MO": 39,
+  "MI": 36,
+  "WA": 36,
+  "GA": 34,
+  "WI": 34,
+  "AZ": 32,
+  "SC": 32,
+  "OR": 30,
+  "TN": 29,
+  "CO": 29,
+  "CT": 23,
+  "MN": 22,
+  "ME": 20,
+  "NH": 18,
+  "NJ": 17,
+  "??": 16,
+  "IA": 14,
+  "KS": 13,
+  "NV": 12,
+  "LA": 12,
+  "HI": 12,
+  "UT": 11,
+  "MT": 11,
+  "VT": 11,
+  "NM": 10,
+  "OK": 10,
+  "AR": 9,
+  "AL": 8,
+  "DE": 7,
+  "ID": 7,
+  "ND": 5,
+  "NE": 4,
+  "AK": 3,
+  "SD": 3,
+  "RI": 1,
+  "DC": 1,
+  "MS": 1
+ },
+ "by_type": {
+  "community": 810,
+  "academic": 573,
+  "locums": 168,
+  "industry": 32,
+  "government": 30
+ },
+ "salary_disclosed": 621,
+ "effort_known": 442,
+ "llm_enriched": 1613
+}
