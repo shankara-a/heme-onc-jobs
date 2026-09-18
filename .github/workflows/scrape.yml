@@ -47,5 +47,7 @@ jobs:
             echo "No data changes."
           else
             git commit -m "chore: refresh job data [skip ci]"
+            # main may have moved while we were scraping (~35 min); replay on top of it
+            git pull --rebase -X theirs origin main
             git push
           fi
