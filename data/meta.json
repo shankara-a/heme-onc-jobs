@@ -1,42 +1,42 @@
 {
- "generated_at": "2026-09-28T13:30:54.631755+00:00",
- "total": 1522,
+ "generated_at": "2026-09-29T13:22:13.505624+00:00",
+ "total": 1403,
  "by_source": {
   "asco": {
-   "raw": 346,
+   "raw": 345,
    "kept": 263
   },
   "nejm": {
-   "raw": 866,
+   "raw": 870,
    "kept": 608
   },
   "ihe": {
-   "raw": 636,
-   "kept": 159
+   "raw": 635,
+   "kept": 158
   },
   "nature": {
-   "raw": 110,
+   "raw": 111,
    "kept": 25
   },
   "science": {
-   "raw": 26,
+   "raw": 27,
    "kept": 15
   },
   "ash": {
    "raw": 93,
-   "kept": 82
+   "kept": 83
   },
   "practicematch": {
-   "raw": 527,
-   "kept": 506
+   "raw": 392,
+   "kept": 380
   },
   "workday": {
-   "raw": 25,
+   "raw": 24,
    "kept": 11
   },
   "greenhouse": {
-   "raw": 43,
-   "kept": 14
+   "raw": 44,
+   "kept": 15
   },
   "ucrecruit": {
    "raw": 64,
@@ -48,67 +48,67 @@
   }
  },
  "by_state": {
-  "CA": 151,
-  "FL": 92,
-  "NC": 86,
-  "NY": 81,
-  "PA": 77,
-  "TX": 70,
-  "OH": 69,
-  "VA": 59,
-  "MA": 49,
-  "IL": 45,
-  "IN": 41,
-  "MO": 40,
-  "KY": 40,
-  "CT": 37,
-  "WV": 36,
-  "WA": 35,
-  "MD": 35,
-  "MI": 35,
+  "CA": 135,
+  "FL": 86,
+  "NC": 80,
+  "NY": 78,
+  "PA": 73,
+  "TX": 62,
+  "OH": 62,
+  "VA": 56,
+  "IL": 44,
+  "MA": 41,
+  "IN": 40,
+  "MO": 39,
+  "KY": 38,
+  "CT": 36,
   "WI": 34,
-  "AZ": 33,
-  "OR": 31,
-  "CO": 26,
-  "TN": 26,
-  "MN": 22,
-  "GA": 22,
+  "MD": 33,
+  "MI": 31,
+  "WA": 30,
+  "OR": 28,
+  "WV": 27,
+  "AZ": 26,
+  "CO": 25,
+  "TN": 24,
   "ME": 21,
-  "??": 18,
+  "??": 19,
+  "GA": 19,
   "NH": 16,
   "IA": 15,
+  "MN": 15,
   "NJ": 15,
-  "KS": 14,
   "SC": 14,
   "ID": 14,
-  "LA": 12,
-  "MT": 11,
-  "NV": 11,
+  "MT": 12,
+  "HI": 11,
+  "LA": 11,
   "VT": 10,
-  "HI": 10,
-  "OK": 10,
+  "KS": 9,
+  "OK": 9,
+  "AL": 9,
   "NM": 9,
-  "DE": 9,
-  "AL": 8,
-  "AR": 7,
+  "NV": 8,
+  "DE": 8,
   "UT": 7,
-  "ND": 6,
+  "ND": 5,
+  "AR": 5,
   "NE": 4,
   "AK": 3,
   "SD": 3,
-  "RI": 1,
+  "RI": 2,
   "MS": 1,
   "DC": 1
  },
  "by_type": {
-  "community": 716,
-  "academic": 563,
-  "locums": 188,
-  "industry": 29,
-  "government": 25,
+  "community": 640,
+  "academic": 529,
+  "locums": 190,
+  "industry": 30,
+  "government": 13,
   "unknown": 1
  },
- "salary_disclosed": 558,
- "effort_known": 366,
- "llm_enriched": 1316
+ "salary_disclosed": 501,
+ "effort_known": 335,
+ "llm_enriched": 1180
 }
