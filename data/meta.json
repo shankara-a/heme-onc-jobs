@@ -1,46 +1,46 @@
 {
- "generated_at": "2026-10-07T19:49:47.585858+00:00",
- "total": 1658,
+ "generated_at": "2026-10-08T19:21:29.057215+00:00",
+ "total": 1073,
  "by_source": {
   "asco": {
-   "raw": 350,
-   "kept": 272
+   "raw": 351,
+   "kept": 273
   },
   "nejm": {
    "raw": 885,
-   "kept": 620
+   "kept": 619
   },
   "ihe": {
-   "raw": 648,
-   "kept": 162
+   "raw": 588,
+   "kept": 159
   },
   "nature": {
-   "raw": 107,
-   "kept": 23
+   "raw": 110,
+   "kept": 24
   },
   "science": {
-   "raw": 30,
-   "kept": 17
+   "raw": 29,
+   "kept": 16
   },
   "ash": {
-   "raw": 101,
+   "raw": 102,
    "kept": 90
   },
   "practicematch": {
-   "raw": 641,
-   "kept": 615
+   "raw": 0,
+   "kept": 0
   },
   "workday": {
    "raw": 29,
    "kept": 14
   },
   "greenhouse": {
-   "raw": 41,
-   "kept": 14
+   "raw": 39,
+   "kept": 13
   },
   "ucrecruit": {
-   "raw": 65,
-   "kept": 27
+   "raw": 64,
+   "kept": 26
   },
   "stanford": {
    "raw": 2,
@@ -48,67 +48,65 @@
   }
  },
  "by_state": {
-  "CA": 162,
-  "NC": 103,
-  "NY": 97,
-  "FL": 91,
-  "PA": 81,
-  "OH": 80,
-  "TX": 76,
-  "VA": 63,
-  "IN": 47,
-  "IL": 45,
-  "MO": 45,
-  "MA": 44,
-  "WI": 43,
-  "MI": 42,
-  "WV": 41,
-  "KY": 40,
-  "CT": 36,
-  "WA": 36,
-  "AZ": 34,
-  "MD": 33,
-  "OR": 33,
-  "TN": 31,
-  "CO": 28,
-  "MN": 26,
-  "GA": 22,
+  "CA": 98,
+  "PA": 72,
+  "NY": 71,
+  "FL": 63,
+  "NC": 59,
+  "OH": 49,
+  "TX": 47,
+  "VA": 46,
+  "MA": 34,
+  "IN": 33,
+  "IL": 31,
+  "KY": 29,
+  "WI": 28,
+  "MD": 26,
+  "OR": 26,
+  "CT": 26,
+  "CO": 24,
+  "WV": 23,
+  "WA": 22,
   "??": 21,
-  "IA": 21,
-  "ME": 20,
-  "NJ": 18,
-  "LA": 17,
-  "ID": 15,
-  "SC": 15,
-  "NH": 15,
-  "KS": 13,
-  "MT": 13,
-  "HI": 13,
-  "NV": 12,
-  "VT": 10,
-  "OK": 10,
-  "NM": 10,
-  "AL": 9,
-  "DE": 9,
-  "AR": 8,
+  "MO": 21,
+  "MI": 16,
+  "TN": 16,
+  "ME": 16,
+  "AZ": 14,
+  "IA": 14,
+  "MN": 13,
+  "GA": 12,
+  "ID": 12,
+  "NH": 11,
+  "MT": 11,
+  "HI": 10,
+  "NJ": 9,
+  "NM": 8,
+  "VT": 7,
+  "SC": 7,
   "UT": 7,
-  "ND": 7,
-  "NE": 4,
-  "SD": 4,
+  "LA": 7,
+  "NV": 6,
+  "OK": 5,
+  "AL": 5,
+  "KS": 4,
+  "DE": 4,
   "AK": 3,
-  "RI": 2,
-  "DC": 2,
-  "MS": 1
+  "ND": 2,
+  "AR": 2,
+  "NE": 1,
+  "DC": 1,
+  "RI": 1
  },
  "by_type": {
-  "community": 787,
-  "academic": 613,
-  "locums": 181,
-  "government": 42,
-  "industry": 33,
-  "unknown": 2
+  "academic": 483,
+  "community": 384,
+  "locums": 170,
+  "industry": 30,
+  "government": 5,
+  "unknown": 1
  },
- "salary_disclosed": 641,
- "effort_known": 324,
- "llm_enriched": 1233
+ "salary_disclosed": 360,
+ "effort_known": 205,
+ "llm_enriched": 735
 }
