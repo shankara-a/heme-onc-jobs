@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-10-25T13:21:13.442042+00:00",
- "total": 1526,
+ "generated_at": "2026-10-26T14:51:02.468674+00:00",
+ "total": 1567,
  "by_source": {
   "asco": {
-   "raw": 346,
-   "kept": 270
+   "raw": 339,
+   "kept": 264
   },
   "nejm": {
-   "raw": 831,
-   "kept": 581
+   "raw": 822,
+   "kept": 574
   },
   "ihe": {
-   "raw": 638,
-   "kept": 162
+   "raw": 650,
+   "kept": 163
   },
   "nature": {
-   "raw": 106,
-   "kept": 23
+   "raw": 100,
+   "kept": 18
   },
   "science": {
    "raw": 24,
@@ -27,15 +27,15 @@
    "kept": 93
   },
   "practicematch": {
-   "raw": 546,
-   "kept": 528
+   "raw": 607,
+   "kept": 583
   },
   "workday": {
    "raw": 23,
    "kept": 10
   },
   "greenhouse": {
-   "raw": 39,
+   "raw": 37,
    "kept": 12
   },
   "ucrecruit": {
@@ -43,72 +43,72 @@
    "kept": 28
   },
   "stanford": {
-   "raw": 2,
-   "kept": 2
+   "raw": 1,
+   "kept": 1
   }
  },
  "by_state": {
-  "CA": 156,
-  "FL": 101,
+  "CA": 162,
+  "FL": 105,
   "NY": 90,
-  "PA": 83,
-  "NC": 76,
-  "OH": 74,
+  "NC": 84,
+  "PA": 82,
+  "OH": 78,
   "TX": 65,
-  "VA": 56,
+  "VA": 58,
   "MA": 47,
-  "IN": 44,
-  "IL": 42,
+  "MO": 43,
+  "IN": 43,
+  "WV": 42,
+  "IL": 40,
+  "WA": 40,
   "WI": 40,
-  "WV": 39,
-  "MO": 38,
-  "WA": 37,
-  "MI": 36,
-  "AZ": 35,
+  "MI": 37,
+  "AZ": 36,
   "KY": 34,
   "CT": 33,
+  "OR": 32,
   "MD": 32,
-  "TN": 32,
-  "OR": 31,
+  "TN": 30,
   "ME": 24,
   "MN": 22,
-  "CO": 20,
+  "CO": 21,
+  "GA": 19,
   "SC": 18,
-  "??": 18,
-  "GA": 18,
   "IA": 16,
+  "??": 16,
   "NH": 16,
+  "LA": 15,
   "HI": 14,
-  "LA": 13,
-  "OK": 12,
+  "OK": 13,
   "ID": 12,
   "MT": 11,
+  "KS": 11,
   "NJ": 10,
   "NV": 9,
+  "AR": 9,
   "AL": 8,
   "VT": 8,
-  "KS": 8,
-  "AR": 7,
-  "NM": 7,
-  "DE": 7,
+  "DE": 8,
   "UT": 6,
+  "NM": 6,
   "ND": 6,
   "NE": 4,
   "RI": 3,
+  "SD": 3,
   "MS": 2,
   "AK": 2,
-  "SD": 2,
   "WY": 1,
   "DC": 1
  },
  "by_type": {
-  "community": 738,
+  "community": 763,
   "academic": 587,
   "locums": 156,
-  "industry": 24,
-  "government": 21
+  "government": 37,
+  "industry": 24
  },
- "salary_disclosed": 593,
- "effort_known": 202,
- "llm_enriched": 900
+ "salary_disclosed": 617,
+ "effort_known": 210,
+ "llm_enriched": 948
 }
