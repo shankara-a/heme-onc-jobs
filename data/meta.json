@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-10-29T12:59:37.004363+00:00",
- "total": 1013,
+ "generated_at": "2026-10-30T13:00:24.256837+00:00",
+ "total": 1023,
  "by_source": {
   "asco": {
-   "raw": 336,
-   "kept": 260
+   "raw": 342,
+   "kept": 264
   },
   "nejm": {
-   "raw": 815,
-   "kept": 565
+   "raw": 819,
+   "kept": 567
   },
   "ihe": {
-   "raw": 632,
-   "kept": 164
+   "raw": 647,
+   "kept": 175
   },
   "nature": {
-   "raw": 98,
+   "raw": 83,
    "kept": 18
   },
   "science": {
@@ -31,11 +31,11 @@
    "kept": 0
   },
   "workday": {
-   "raw": 25,
-   "kept": 13
+   "raw": 24,
+   "kept": 10
   },
   "greenhouse": {
-   "raw": 38,
+   "raw": 37,
    "kept": 12
   },
   "ucrecruit": {
@@ -49,64 +49,63 @@
  },
  "by_state": {
   "CA": 94,
-  "PA": 73,
-  "NY": 71,
-  "FL": 68,
+  "PA": 79,
+  "FL": 70,
+  "NY": 70,
+  "OH": 51,
   "NC": 51,
-  "OH": 50,
-  "VA": 46,
-  "TX": 42,
-  "MA": 35,
-  "MD": 30,
-  "IN": 27,
+  "VA": 48,
+  "TX": 39,
+  "MA": 37,
+  "IN": 29,
+  "MD": 28,
+  "OR": 27,
+  "KY": 26,
   "WV": 26,
   "WI": 25,
-  "IL": 25,
-  "KY": 25,
-  "CT": 24,
-  "OR": 24,
-  "MO": 22,
+  "IL": 24,
+  "MO": 23,
+  "WA": 21,
   "ME": 21,
-  "WA": 20,
-  "??": 19,
+  "CT": 21,
+  "??": 18,
   "CO": 18,
   "AZ": 17,
-  "TN": 14,
-  "MI": 11,
-  "GA": 11,
-  "HI": 10,
+  "TN": 13,
+  "GA": 12,
+  "MI": 10,
   "NH": 10,
   "SC": 10,
+  "HI": 9,
+  "MT": 9,
   "IA": 9,
   "MN": 9,
-  "MT": 8,
   "OK": 8,
   "ID": 8,
+  "VT": 7,
   "LA": 7,
   "UT": 6,
-  "VT": 6,
+  "NM": 4,
+  "KS": 4,
   "NV": 4,
   "AL": 4,
   "NJ": 4,
-  "NM": 4,
-  "KS": 3,
   "AR": 3,
   "DE": 3,
   "RI": 2,
   "AK": 2,
   "NE": 1,
   "MS": 1,
-  "WY": 1,
-  "ND": 1
+  "WY": 1
  },
  "by_type": {
-  "academic": 480,
-  "community": 356,
-  "locums": 146,
-  "industry": 25,
-  "government": 6
+  "academic": 489,
+  "community": 357,
+  "locums": 148,
+  "industry": 22,
+  "government": 7
  },
- "salary_disclosed": 352,
- "effort_known": 115,
- "llm_enriched": 544
+ "salary_disclosed": 345,
+ "effort_known": 113,
+ "llm_enriched": 538
 }
