@@ -1,38 +1,38 @@
 {
- "generated_at": "2026-10-30T13:00:24.256837+00:00",
- "total": 1023,
+ "generated_at": "2026-10-31T12:54:00.643268+00:00",
+ "total": 1015,
  "by_source": {
   "asco": {
-   "raw": 342,
-   "kept": 264
+   "raw": 341,
+   "kept": 266
   },
   "nejm": {
-   "raw": 819,
-   "kept": 567
+   "raw": 810,
+   "kept": 561
   },
   "ihe": {
-   "raw": 647,
-   "kept": 175
+   "raw": 648,
+   "kept": 173
   },
   "nature": {
-   "raw": 83,
-   "kept": 18
+   "raw": 81,
+   "kept": 19
   },
   "science": {
-   "raw": 23,
+   "raw": 22,
    "kept": 13
   },
   "ash": {
-   "raw": 116,
-   "kept": 96
+   "raw": 113,
+   "kept": 93
   },
   "practicematch": {
    "raw": 0,
    "kept": 0
   },
   "workday": {
-   "raw": 24,
-   "kept": 10
+   "raw": 23,
+   "kept": 9
   },
   "greenhouse": {
    "raw": 37,
@@ -43,53 +43,53 @@
    "kept": 27
   },
   "stanford": {
-   "raw": 1,
-   "kept": 1
+   "raw": 2,
+   "kept": 2
   }
  },
  "by_state": {
   "CA": 94,
-  "PA": 79,
-  "FL": 70,
-  "NY": 70,
-  "OH": 51,
-  "NC": 51,
+  "PA": 78,
+  "NY": 72,
+  "FL": 68,
+  "NC": 52,
   "VA": 48,
-  "TX": 39,
-  "MA": 37,
-  "IN": 29,
+  "OH": 47,
+  "TX": 37,
+  "MA": 36,
+  "IN": 31,
   "MD": 28,
   "OR": 27,
   "KY": 26,
-  "WV": 26,
-  "WI": 25,
+  "WV": 25,
   "IL": 24,
-  "MO": 23,
+  "MO": 24,
+  "WI": 23,
   "WA": 21,
   "ME": 21,
   "CT": 21,
-  "??": 18,
   "CO": 18,
+  "??": 17,
   "AZ": 17,
+  "GA": 13,
   "TN": 13,
-  "GA": 12,
+  "NH": 11,
   "MI": 10,
-  "NH": 10,
   "SC": 10,
   "HI": 9,
   "MT": 9,
   "IA": 9,
   "MN": 9,
-  "OK": 8,
   "ID": 8,
+  "OK": 7,
   "VT": 7,
   "LA": 7,
   "UT": 6,
-  "NM": 4,
   "KS": 4,
   "NV": 4,
   "AL": 4,
   "NJ": 4,
+  "NM": 3,
   "AR": 3,
   "DE": 3,
   "RI": 2,
@@ -99,13 +99,13 @@
   "WY": 1
  },
  "by_type": {
-  "academic": 489,
-  "community": 357,
-  "locums": 148,
-  "industry": 22,
+  "academic": 488,
+  "community": 358,
+  "locums": 141,
+  "industry": 21,
   "government": 7
  },
  "salary_disclosed": 345,
- "effort_known": 113,
- "llm_enriched": 538
+ "effort_known": 111,
+ "llm_enriched": 539
 }
