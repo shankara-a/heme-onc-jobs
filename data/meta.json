@@ -1,38 +1,38 @@
 {
- "generated_at": "2026-11-13T13:00:13.122404+00:00",
- "total": 1028,
+ "generated_at": "2026-11-14T12:53:03.941922+00:00",
+ "total": 1008,
  "by_source": {
   "asco": {
-   "raw": 333,
-   "kept": 262
+   "raw": 330,
+   "kept": 260
   },
   "nejm": {
-   "raw": 827,
-   "kept": 574
+   "raw": 834,
+   "kept": 575
   },
   "ihe": {
-   "raw": 655,
-   "kept": 173
+   "raw": 562,
+   "kept": 151
   },
   "nature": {
-   "raw": 90,
-   "kept": 23
+   "raw": 91,
+   "kept": 22
   },
   "science": {
-   "raw": 21,
+   "raw": 23,
    "kept": 14
   },
   "ash": {
-   "raw": 111,
-   "kept": 95
+   "raw": 112,
+   "kept": 96
   },
   "practicematch": {
    "raw": 0,
    "kept": 0
   },
   "workday": {
-   "raw": 20,
-   "kept": 8
+   "raw": 9,
+   "kept": 3
   },
   "greenhouse": {
    "raw": 39,
@@ -49,62 +49,62 @@
  },
  "by_state": {
   "CA": 101,
-  "PA": 83,
-  "FL": 65,
-  "NY": 65,
-  "OH": 48,
-  "NC": 47,
-  "VA": 47,
-  "TX": 43,
-  "MA": 36,
-  "IN": 31,
+  "PA": 84,
+  "FL": 69,
+  "NY": 66,
+  "NC": 46,
+  "TX": 42,
+  "OH": 41,
+  "MA": 37,
+  "VA": 35,
+  "IN": 32,
   "MD": 30,
   "MO": 28,
   "IL": 27,
-  "KY": 25,
-  "OR": 25,
-  "WI": 25,
+  "KY": 27,
+  "WI": 26,
   "CT": 24,
+  "OR": 24,
   "WV": 24,
-  "WA": 21,
-  "ME": 20,
-  "AZ": 19,
+  "ME": 21,
+  "AZ": 20,
+  "WA": 20,
   "CO": 17,
-  "??": 16,
-  "GA": 13,
   "TN": 13,
-  "MI": 11,
+  "??": 12,
+  "GA": 12,
   "NH": 11,
   "SC": 10,
   "MT": 10,
   "HI": 10,
-  "OK": 9,
+  "MI": 9,
+  "OK": 8,
   "MN": 8,
   "VT": 7,
   "IA": 7,
-  "LA": 6,
   "UT": 6,
+  "LA": 6,
   "NV": 5,
   "AL": 5,
-  "NJ": 5,
   "RI": 4,
   "AR": 4,
   "DE": 4,
   "KS": 4,
   "NM": 3,
   "ID": 3,
+  "NJ": 3,
   "AK": 1,
   "MS": 1,
   "WY": 1
  },
  "by_type": {
-  "academic": 489,
-  "community": 357,
-  "locums": 155,
-  "industry": 19,
-  "government": 8
+  "academic": 474,
+  "community": 358,
+  "locums": 153,
+  "industry": 14,
+  "government": 9
  },
- "salary_disclosed": 343,
+ "salary_disclosed": 340,
  "effort_known": 93,
- "llm_enriched": 455
+ "llm_enriched": 439
 }
