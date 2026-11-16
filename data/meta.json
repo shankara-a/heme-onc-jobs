@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-11-15T12:51:05.246412+00:00",
- "total": 1006,
+ "generated_at": "2026-11-16T13:08:12.753498+00:00",
+ "total": 1007,
  "by_source": {
   "asco": {
-   "raw": 327,
-   "kept": 257
+   "raw": 321,
+   "kept": 251
   },
   "nejm": {
-   "raw": 825,
-   "kept": 570
+   "raw": 831,
+   "kept": 576
   },
   "ihe": {
-   "raw": 564,
-   "kept": 152
+   "raw": 683,
+   "kept": 167
   },
   "nature": {
-   "raw": 92,
+   "raw": 91,
    "kept": 22
   },
   "science": {
@@ -23,16 +23,16 @@
    "kept": 14
   },
   "ash": {
-   "raw": 109,
-   "kept": 94
+   "raw": 106,
+   "kept": 92
   },
   "practicematch": {
    "raw": 0,
    "kept": 0
   },
   "workday": {
-   "raw": 19,
-   "kept": 7
+   "raw": 2,
+   "kept": 1
   },
   "greenhouse": {
    "raw": 39,
@@ -43,68 +43,68 @@
    "kept": 30
   },
   "stanford": {
-   "raw": 1,
-   "kept": 1
+   "raw": 2,
+   "kept": 2
   }
  },
  "by_state": {
-  "CA": 100,
-  "PA": 86,
-  "FL": 68,
-  "NY": 65,
-  "NC": 44,
-  "TX": 42,
-  "OH": 41,
-  "VA": 37,
-  "MA": 37,
-  "IN": 36,
-  "MD": 29,
+  "CA": 98,
+  "PA": 85,
+  "FL": 69,
+  "NY": 63,
+  "OH": 50,
+  "NC": 45,
+  "TX": 45,
+  "MA": 36,
+  "VA": 36,
+  "IN": 31,
+  "MO": 28,
   "KY": 28,
+  "MD": 27,
   "IL": 27,
-  "MO": 26,
+  "WV": 24,
   "WI": 24,
   "CT": 24,
   "OR": 24,
-  "WV": 23,
   "ME": 21,
-  "WA": 20,
   "AZ": 20,
+  "WA": 19,
   "CO": 17,
-  "??": 15,
   "TN": 13,
+  "??": 12,
   "GA": 12,
+  "NH": 11,
   "MI": 10,
   "SC": 10,
-  "NH": 10,
   "HI": 10,
-  "MT": 9,
   "OK": 8,
   "MN": 8,
+  "MT": 8,
   "VT": 7,
   "IA": 7,
+  "UT": 6,
   "LA": 6,
-  "UT": 5,
   "NV": 5,
   "AL": 5,
   "RI": 4,
   "AR": 4,
   "DE": 4,
   "KS": 4,
+  "NJ": 3,
   "NM": 3,
   "ID": 3,
-  "NJ": 2,
   "AK": 1,
   "MS": 1,
   "WY": 1
  },
  "by_type": {
-  "academic": 468,
-  "community": 354,
-  "locums": 157,
-  "industry": 18,
+  "academic": 478,
+  "community": 352,
+  "locums": 156,
+  "industry": 12,
   "government": 9
  },
- "salary_disclosed": 338,
- "effort_known": 95,
- "llm_enriched": 438
+ "salary_disclosed": 326,
+ "effort_known": 92,
+ "llm_enriched": 432
 }
