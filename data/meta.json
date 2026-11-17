@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-11-16T13:08:12.753498+00:00",
+ "generated_at": "2026-11-17T12:59:35.286304+00:00",
  "total": 1007,
  "by_source": {
   "asco": {
-   "raw": 321,
-   "kept": 251
+   "raw": 324,
+   "kept": 255
   },
   "nejm": {
-   "raw": 831,
-   "kept": 576
+   "raw": 839,
+   "kept": 577
   },
   "ihe": {
-   "raw": 683,
-   "kept": 167
+   "raw": 710,
+   "kept": 169
   },
   "nature": {
-   "raw": 91,
+   "raw": 92,
    "kept": 22
   },
   "science": {
@@ -23,20 +23,20 @@
    "kept": 14
   },
   "ash": {
-   "raw": 106,
-   "kept": 92
+   "raw": 104,
+   "kept": 89
   },
   "practicematch": {
    "raw": 0,
    "kept": 0
   },
   "workday": {
-   "raw": 2,
+   "raw": 5,
    "kept": 1
   },
   "greenhouse": {
-   "raw": 39,
-   "kept": 13
+   "raw": 37,
+   "kept": 12
   },
   "ucrecruit": {
    "raw": 76,
@@ -48,63 +48,64 @@
   }
  },
  "by_state": {
-  "CA": 98,
+  "CA": 99,
   "PA": 85,
-  "FL": 69,
-  "NY": 63,
-  "OH": 50,
-  "NC": 45,
-  "TX": 45,
+  "FL": 71,
+  "NY": 64,
+  "OH": 48,
+  "NC": 44,
+  "TX": 42,
   "MA": 36,
   "VA": 36,
-  "IN": 31,
+  "IN": 33,
+  "IL": 28,
   "MO": 28,
   "KY": 28,
   "MD": 27,
-  "IL": 27,
   "WV": 24,
   "WI": 24,
   "CT": 24,
   "OR": 24,
-  "ME": 21,
-  "AZ": 20,
-  "WA": 19,
-  "CO": 17,
+  "WA": 20,
+  "AZ": 19,
+  "ME": 19,
+  "CO": 18,
   "TN": 13,
-  "??": 12,
   "GA": 12,
+  "??": 11,
   "NH": 11,
   "MI": 10,
   "SC": 10,
   "HI": 10,
   "OK": 8,
-  "MN": 8,
   "MT": 8,
   "VT": 7,
+  "MN": 7,
   "IA": 7,
   "UT": 6,
   "LA": 6,
+  "AR": 5,
   "NV": 5,
   "AL": 5,
   "RI": 4,
-  "AR": 4,
   "DE": 4,
   "KS": 4,
   "NJ": 3,
   "NM": 3,
   "ID": 3,
+  "ND": 1,
   "AK": 1,
   "MS": 1,
   "WY": 1
  },
  "by_type": {
-  "academic": 478,
-  "community": 352,
-  "locums": 156,
-  "industry": 12,
+  "academic": 480,
+  "community": 354,
+  "locums": 153,
+  "industry": 11,
   "government": 9
  },
- "salary_disclosed": 326,
- "effort_known": 92,
- "llm_enriched": 432
+ "salary_disclosed": 328,
+ "effort_known": 96,
+ "llm_enriched": 434
 }
