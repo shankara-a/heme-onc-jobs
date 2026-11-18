@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-17T12:59:35.286304+00:00",
- "total": 1007,
+ "generated_at": "2026-11-18T12:58:31.380005+00:00",
+ "total": 1013,
  "by_source": {
   "asco": {
-   "raw": 324,
-   "kept": 255
+   "raw": 326,
+   "kept": 257
   },
   "nejm": {
-   "raw": 839,
-   "kept": 577
+   "raw": 841,
+   "kept": 581
   },
   "ihe": {
-   "raw": 710,
+   "raw": 714,
    "kept": 169
   },
   "nature": {
@@ -19,20 +19,20 @@
    "kept": 22
   },
   "science": {
-   "raw": 23,
+   "raw": 24,
    "kept": 14
   },
   "ash": {
-   "raw": 104,
-   "kept": 89
+   "raw": 107,
+   "kept": 92
   },
   "practicematch": {
    "raw": 0,
    "kept": 0
   },
   "workday": {
-   "raw": 5,
-   "kept": 1
+   "raw": 0,
+   "kept": 0
   },
   "greenhouse": {
    "raw": 37,
@@ -43,42 +43,42 @@
    "kept": 30
   },
   "stanford": {
-   "raw": 2,
-   "kept": 2
+   "raw": 1,
+   "kept": 1
   }
  },
  "by_state": {
   "CA": 99,
-  "PA": 85,
-  "FL": 71,
-  "NY": 64,
-  "OH": 48,
-  "NC": 44,
+  "PA": 86,
+  "FL": 70,
+  "NY": 65,
+  "OH": 46,
+  "NC": 45,
   "TX": 42,
-  "MA": 36,
-  "VA": 36,
-  "IN": 33,
+  "VA": 39,
+  "IN": 35,
+  "MA": 35,
+  "MO": 29,
   "IL": 28,
-  "MO": 28,
   "KY": 28,
   "MD": 27,
-  "WV": 24,
-  "WI": 24,
   "CT": 24,
-  "OR": 24,
+  "WV": 24,
+  "WI": 23,
+  "CO": 23,
+  "OR": 23,
   "WA": 20,
-  "AZ": 19,
+  "AZ": 20,
   "ME": 19,
-  "CO": 18,
   "TN": 13,
-  "GA": 12,
-  "??": 11,
+  "GA": 11,
   "NH": 11,
+  "??": 10,
   "MI": 10,
-  "SC": 10,
-  "HI": 10,
-  "OK": 8,
+  "HI": 9,
+  "SC": 9,
   "MT": 8,
+  "OK": 8,
   "VT": 7,
   "MN": 7,
   "IA": 7,
@@ -87,10 +87,10 @@
   "AR": 5,
   "NV": 5,
   "AL": 5,
+  "NJ": 4,
   "RI": 4,
   "DE": 4,
   "KS": 4,
-  "NJ": 3,
   "NM": 3,
   "ID": 3,
   "ND": 1,
@@ -99,13 +99,13 @@
   "WY": 1
  },
  "by_type": {
-  "academic": 480,
-  "community": 354,
-  "locums": 153,
+  "academic": 484,
+  "community": 357,
+  "locums": 151,
   "industry": 11,
-  "government": 9
+  "government": 10
  },
- "salary_disclosed": 328,
+ "salary_disclosed": 335,
  "effort_known": 96,
- "llm_enriched": 434
+ "llm_enriched": 435
 }
