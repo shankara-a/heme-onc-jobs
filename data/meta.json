@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-11-18T12:58:31.380005+00:00",
- "total": 1013,
+ "generated_at": "2026-11-19T12:58:01.640469+00:00",
+ "total": 1029,
  "by_source": {
   "asco": {
-   "raw": 326,
-   "kept": 257
+   "raw": 324,
+   "kept": 256
   },
   "nejm": {
-   "raw": 841,
-   "kept": 581
+   "raw": 859,
+   "kept": 595
   },
   "ihe": {
-   "raw": 714,
-   "kept": 169
+   "raw": 724,
+   "kept": 173
   },
   "nature": {
-   "raw": 92,
-   "kept": 22
+   "raw": 80,
+   "kept": 20
   },
   "science": {
    "raw": 24,
@@ -31,63 +31,63 @@
    "kept": 0
   },
   "workday": {
-   "raw": 0,
-   "kept": 0
+   "raw": 8,
+   "kept": 1
   },
   "greenhouse": {
    "raw": 37,
    "kept": 12
   },
   "ucrecruit": {
-   "raw": 76,
+   "raw": 77,
    "kept": 30
   },
   "stanford": {
-   "raw": 1,
-   "kept": 1
+   "raw": 2,
+   "kept": 2
   }
  },
  "by_state": {
-  "CA": 99,
-  "PA": 86,
+  "CA": 105,
+  "PA": 89,
   "FL": 70,
   "NY": 65,
-  "OH": 46,
-  "NC": 45,
-  "TX": 42,
-  "VA": 39,
+  "OH": 49,
+  "NC": 47,
+  "TX": 43,
+  "VA": 40,
   "IN": 35,
   "MA": 35,
   "MO": 29,
-  "IL": 28,
   "KY": 28,
+  "IL": 27,
   "MD": 27,
+  "OR": 24,
   "CT": 24,
   "WV": 24,
   "WI": 23,
   "CO": 23,
-  "OR": 23,
   "WA": 20,
   "AZ": 20,
-  "ME": 19,
-  "TN": 13,
-  "GA": 11,
+  "ME": 18,
+  "TN": 12,
+  "??": 11,
   "NH": 11,
-  "??": 10,
+  "HI": 10,
   "MI": 10,
-  "HI": 9,
+  "GA": 10,
   "SC": 9,
   "MT": 8,
-  "OK": 8,
-  "VT": 7,
+  "VT": 8,
+  "OK": 7,
   "MN": 7,
   "IA": 7,
   "UT": 6,
   "LA": 6,
   "AR": 5,
+  "NJ": 5,
   "NV": 5,
   "AL": 5,
-  "NJ": 4,
   "RI": 4,
   "DE": 4,
   "KS": 4,
@@ -100,12 +100,12 @@
  },
  "by_type": {
   "academic": 484,
-  "community": 357,
-  "locums": 151,
-  "industry": 11,
+  "community": 370,
+  "locums": 152,
+  "industry": 13,
   "government": 10
  },
- "salary_disclosed": 335,
- "effort_known": 96,
+ "salary_disclosed": 345,
+ "effort_known": 97,
  "llm_enriched": 435
 }
